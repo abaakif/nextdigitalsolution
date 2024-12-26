@@ -1,4 +1,42 @@
 <?php
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Include your database connection
+    $servername = "localhost";
+    $username = "u731809186_nextdigital";
+    $password = "?X3;Lk#l";
+    $dbname = "u731809186_nextdigital";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Prepare and bind
+    $stmt = $conn->prepare("INSERT INTO contacts (name, email, phone, subject, comment) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $name, $email, $phone, $subject, $comment);
+
+    // Get form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $subject = $_POST['subject'];
+    $comment = $_POST['comment'];
+
+    // Execute the query
+    if ($stmt->execute()) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+
+    // Close connections
+    $stmt->close();
+    $conn->close();
+}
+
+
 if( ! empty( $_POST['email'] ) ) {
 
 	// Enable / Disable SMTP
