@@ -210,3 +210,4 @@ if( ! empty( $_POST['email'] ) ) {
 	//Empty Email Message
 	echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Please add an email address!" }';
 }
+?>
