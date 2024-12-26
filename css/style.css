@@ -1745,8 +1745,9 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   position: relative;
   font-family: var(--alt-font);
   font-size: 15px;
+  font-weight: 600;
   display: block;
-  color: var(--white);
+  color: var(--base-color);
   margin: 10px 0 !important;
   opacity: 0.7;
   width: 56px;
@@ -1761,6 +1762,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
 }
 .swiper-number-pagination-style-02 .swiper-number .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
+  color: var(--white);
 }
 .swiper-number-pagination-style-02 .swiper-number .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
   opacity: 1;
