@@ -1,13 +1,13 @@
-﻿<!doctype html>
+<!doctype html>
 <html class="no-js" lang="en">
 
 <head>
-    <title>Next Digital Solutions</title>
+    <title>LaunchDok — Prepare · Launch · Grow</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="image/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -19,12 +19,13 @@
     <link rel="stylesheet" href="css/icon.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="demos/accounting/accounting.css" />
+    <link rel="stylesheet" href="demos/style/style.css" />
+    <link rel="stylesheet" href="css/launchdok.css" />
 </head>
 
-<body data-mobile-nav-style="classic" class="custom-cursor  bg-solitude-blue">
+<body data-mobile-nav-style="classic" class="custom-cursor launchdok-theme bg-dark-gray">
     <div id="particles-01" data-particle="true"
-        data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#b7b9be", "#005153"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
+        data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#333333", "#FF6A00"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
         class="position-absolute h-100 top-0 left-0 z-index-minus-1"></div>
 
     <!-- start cursor -->
@@ -36,13 +37,15 @@
     <!-- start Topbar header -->
     <header class="header-with-topbar">
         <!-- start navigation -->
-        <nav class="navbar navbar-expand-lg header-light bg-white responsive-sticky">
+        <nav class="navbar navbar-expand-lg header-dark bg-dark-gray responsive-sticky">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand" href="#">
-                        <img src="image/Logo.png" data-at2x="image/Logo.png" alt="" class="default-logo">
-                        <img src="image/Logo.png" data-at2x="image/Logo.png" alt="" class="alt-logo">
-                        <img src="image/Logo.png" data-at2x="image/Logo.png" alt="" class="mobile-logo">
+                    <a class="navbar-brand launchdok-logo" href="./index.html">
+                        <img src="image/LaunchDok-mark.svg" alt="" class="launchdok-logo-mark">
+                        <span>
+                            <span class="launchdok-logo-text">Launch<span class="ld-accent">Dok</span></span>
+                            <span class="launchdok-logo-tagline">Prepare · Launch · Grow</span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-auto menu-order position-static">
@@ -55,41 +58,44 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav fw-600">
-                            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Company</a>
+                            <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#company" class="nav-link">Company</a>
                             </li>
                             <li class="nav-item dropdown dropdown-with-icon-style02">
-                                <a href="#" class="nav-link">Services</a>
+                                <a href="#services" class="nav-link">Services</a>
                                 <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li>
-                                        <a href="#">
-                                            <i class="fa-solid fa-globe fs-16 me-2 text-dark-gray"></i>Website
-                                            Development
+                                        <a href="#services">
+                                            <i class="fa-solid fa-globe fs-16 me-2 text-base-color"></i>Websites
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            <i class="fa-solid fa-desktop fs-16 me-2 text-dark-gray"></i>IT Consulting
+                                        <a href="#services">
+                                            <i class="fa-solid fa-robot fs-16 me-2 text-base-color"></i>AI Automation
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            <i class="fa-solid fa-chart-line fs-16 me-2 text-dark-gray"></i>Marketing
-                                            Consulting
+                                        <a href="#services">
+                                            <i class="fa-solid fa-pen-nib fs-16 me-2 text-base-color"></i>Branding
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            <i class="fa-solid fa-robot fs-16 me-2 text-dark-gray"></i>Process
-                                            Automation
+                                        <a href="#services">
+                                            <i class="fa-solid fa-bullhorn fs-16 me-2 text-base-color"></i>Digital Marketing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#services">
+                                            <i class="fa-solid fa-headset fs-16 me-2 text-base-color"></i>Support
                                         </a>
                                     </li>
                                 </ul>
                             </li>
-
-                            <li class="nav-item"><a href="#" class="nav-link">Contact</a>
+                            <li class="nav-item"><a href="./Client.html" class="nav-link">Client</a>
+                            </li>
+                            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -97,7 +103,7 @@
                 <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
                     <div class="header-icon">
                         <div class="header-button">
-                            <a href="#" class="btn btn-small btn-round-edge btn-base-color btn-box-shadow">Let's
+                            <a href="#contact" class="btn btn-small btn-round-edge btn-base-color btn-box-shadow">Let's
                                 discuss</a>
                         </div>
                     </div>
@@ -111,7 +117,7 @@
     <!-- start section -->
     <section class="p-0">
         <div id="particles-02" data-particle="true"
-            data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#b7b9be", "#dd6531"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
+            data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#333333", "#FF6A00"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
             class="position-absolute h-100 top-0 left-0 z-index-minus-1"></div>
         <div class="swiper full-screen ipad-top-space-margin md-h-600px sm-h-500px swiper-number-pagination-style-02 magic-cursor light magic-cursor-vertical lg-no-parallax"
             data-slider-options='{ "slidesPerView": 1, "direction": "horizontal", "loop": true, "parallax": true, "speed": 1000, "pagination": { "el": ".swiper-number", "clickable": true }, "autoplay": { "delay": 40000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1199": { "direction": "vertical" }}, "effect": "slide" }'
@@ -128,20 +134,19 @@
                                     class="col-md-10 position-relative text-dark d-flex flex-column justify-content-center h-100 text-center">
                                     <div class="alt-font fs-110 xs-fs-80 lh-100 mb-5 xs-mb-35px ls-minus-4px xs-ls-minus-2px"
                                         data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'>
-                                        <span class="d-inline-block">Professional</span>
-                                        <span class="d-inline-block fw-600">consulting</span>
+                                        <span class="d-inline-block">Prepare.</span>
+                                        <span class="d-inline-block fw-600 text-base-color">Launch.</span>
+                                        <span class="d-inline-block fw-600">Grow.</span>
                                     </div>
                                     <div
                                         data-anime='{  "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                        <a href="#"
-                                            class="btn btn-base-color btn-box-shadow btn-large btn-round-edge">Let's
-                                            work together</a>
+                                        <a href="#contact"
+                                            class="btn btn-base-color btn-box-shadow btn-large btn-round-edge">Start your project</a>
                                     </div>
                                     <div data-anime='{ "opacity": [0, 1], "duration": 500, "delay": 1000, "easing": "easeOutQuad" }'
                                         class="fs-20 alt-font position-absolute lg-position-relative left-0px right-0px bottom-0 mb-8 lg-mt-40px lg-mb-0 sm-mt-25px w-100">
-                                        Request a free <a href="#"
-                                            class="text-decoration-line-bottom text-dark fw-500">business
-                                            consulting!</a></div>
+                                        Building digital presence that <a href="#company"
+                                            class="text-decoration-line-bottom text-dark fw-500">launches businesses into the future.</a></div>
                                 </div>
                             </div>
                         </div>
@@ -159,18 +164,17 @@
                                     class="col-md-10 position-relative text-dark d-flex flex-column justify-content-center h-100 text-center">
                                     <div class="alt-font fs-110 xs-fs-80 lh-100 mb-5 xs-mb-35px ls-minus-4px xs-ls-minus-2px"
                                         data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'>
-                                        <span class="d-inline-block">Contribute</span><br>
-                                        <span class="fw-600 d-inline-block">guidance</span>
+                                        <span class="d-inline-block">Modern.</span><br>
+                                        <span class="fw-600 d-inline-block text-base-color">Digital.</span>
                                     </div>
                                     <div
                                         data-anime='{  "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                        <a href="#"
-                                            class="btn btn-base-color btn-box-shadow btn-large btn-round-edge">Let's
-                                            work together</a></div>
+                                        <a href="./Client.html"
+                                            class="btn btn-base-color btn-box-shadow btn-large btn-round-edge">View our work</a></div>
                                     <div data-anime='{ "opacity": [0, 1], "duration": 500, "delay": 1000, "easing": "easeOutQuad" }'
                                         class="fs-20 alt-font position-absolute lg-position-relative left-0px right-0px bottom-0 mb-8 lg-mt-40px lg-mb-0 sm-mt-25px w-100">
-                                        Discover our <a href="#"
-                                            class="text-decoration-line-bottom text-dark fw-500">business process!</a>
+                                        Explore our <a href="./Client.html"
+                                            class="text-decoration-line-bottom text-dark fw-500">client portfolio!</a>
                                     </div>
                                 </div>
                             </div>
@@ -189,18 +193,17 @@
                                     class="col-md-10 position-relative text-dark d-flex flex-column justify-content-center h-100 text-center">
                                     <div class="alt-font fs-110 xs-fs-80 lh-100 mb-5 xs-mb-35px ls-minus-4px xs-ls-minus-2px"
                                         data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'>
-                                        <span class="d-inline-block">Business</span><br>
-                                        <span class="fw-600 d-inline-block">strategies</span>
+                                        <span class="d-inline-block">Smarter.</span><br>
+                                        <span class="fw-600 d-inline-block text-base-color">Solutions.</span>
                                     </div>
                                     <div
                                         data-anime='{  "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                        <a href="#"
-                                            class="btn btn-base-color btn-box-shadow btn-large btn-round-edge">Let's
-                                            work together</a></div>
+                                        <a href="#services"
+                                            class="btn btn-base-color btn-box-shadow btn-large btn-round-edge">Our services</a></div>
                                     <div data-anime='{ "opacity": [0, 1], "duration": 500, "delay": 1000, "easing": "easeOutQuad" }'
                                         class="fs-20 alt-font position-absolute lg-position-relative left-0px right-0px bottom-0 mb-8 lg-mt-40px lg-mb-0 sm-mt-25px w-100">
-                                        Become a part of <a href="#"
-                                            class="text-decoration-line-bottom text-dark fw-500">business venture!</a>
+                                        Websites, AI automation &amp; <a href="#services"
+                                            class="text-decoration-line-bottom text-dark fw-500">digital marketing!</a>
                                     </div>
                                 </div>
                             </div>
@@ -220,35 +223,31 @@
 
 
     <!-- start section -->
-    <section class="position-relative overflow-hidden pt-0">
+    <section id="company" class="position-relative overflow-hidden pt-0">
         <div id="particles-03" data-particle="true"
-            data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#b7b9be", "#005153"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
+            data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#333333", "#FF6A00"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
             class="position-absolute h-100 top-0 left-0 z-index-minus-1"></div>
         <div class="container">
             <div class="row align-items-center mt-4 lg-mt-2 mb-50px lg-mb-0">
                 <div class="col-lg-6 position-relative md-mb-70px">
                     <div class="w-75 overflow-hidden position-relative xs-w-80 border-radius-4px"
-                        data-anime='{ "effect": "slide", "direction": "lr", "color": "#005153", "duration": 1000, "delay": 0 }'>
+                        data-anime='{ "effect": "slide", "direction": "lr", "color": "#FF6A00", "duration": 1000, "delay": 0 }'>
                         <img class="w-100" src="./image/S1_1.png" alt="">
                     </div>
                     <div class="border-radius-4px position-absolute right-minus-15px md-right-15px bottom-minus-50px w-55 md-w-50 overflow-hidden"
                         data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)"
-                        data-anime='{ "effect": "slide", "direction": "rl", "color": "#005153", "duration": 1000, "delay": 500 }'>
+                        data-anime='{ "effect": "slide", "direction": "rl", "color": "#FF6A00", "duration": 1000, "delay": 500 }'>
                         <img class="w-100" src="./image/S1_2.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1 md-mt-30px"
                     data-anime='{ "opacity": [0, 1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutCirc" }'>
-                    <span class="fs-20 mb-15px text-dark-gray fw-600 d-inline-block">Company's vision</span>
-                    <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px mb-25px">Scalable business for startups.</h2>
-                    <p class="w-80 lg-w-100 mb-35px sm-mb-25px">Our mission is to empower startups with scalable
-                        solutions that enable rapid growth and long-term sustainability. We strive to provide innovative
-                        strategies, cutting-edge technologies, and expert guidance to help businesses reach their full
-                        potential in a competitive market.</p>
+                    <span class="fs-20 mb-15px text-base-color fw-600 d-inline-block">About LaunchDok</span>
+                    <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px mb-25px">A place to prepare, launch, and grow.</h2>
+                    <p class="w-80 lg-w-100 mb-35px sm-mb-25px">LaunchDok helps businesses build a powerful digital presence — from modern websites and AI automation to branding and digital marketing. We prepare your foundation, launch your vision, and grow your reach.</p>
                     <div class="d-inline-block">
-                        <a href="#" class="btn btn-medium  btn-base-color btn-box-shadow me-25px btn-round-edge">About
-                            company</a>
-                        <a href="#" class="btn btn-link btn-large text-dark-gray xs-mt-15px xs-mb-15px">How we work</a>
+                        <a href="#services" class="btn btn-medium btn-base-color btn-box-shadow me-25px btn-round-edge">Our services</a>
+                        <a href="./Client.html" class="btn btn-link btn-large text-dark-gray xs-mt-15px xs-mb-15px">View client work</a>
                     </div>
                 </div>
             </div>
@@ -264,8 +263,8 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-xl-8 col-lg-10 text-center position-relative page-title-extra-large"
                     data-anime='{ "el": "childs", "translateY": [-15, 0], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <h1 class="fw-700 text-dark-gray mb-20px ls-minus-2px">Expertise</h1>
-                    <h2 class="fw-400 ls-0px mb-0">Perfect solutions for your business</h2>
+                    <h1 class="fw-700 text-dark-gray mb-20px ls-minus-2px">Services</h1>
+                    <h2 class="fw-400 ls-0px mb-0">Everything you need to launch and grow online</h2>
                 </div>
             </div>
         </div>
@@ -316,96 +315,40 @@
                     <!-- end progress bar item -->
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center text-center"
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4 ld-process-steps mb-6"
                 data-anime='{ "el": "childs", "translateY": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-11 border-0 overflow-visible">
-                    <div
-                        class="text-box-wrapper align-items-center d-flex position-relative overflow-hidden border-radius-6px">
-                        <div class="text-center w-100">
-                            <div class="text-box last-paragraph-no-margin p-20">
-                                <i class="fas fa-comments w-110px mb-20px d-block mx-auto fa-3x"></i>
-                                <span class="alt-font text-dark-gray fw-600 fs-20">Discussion</span>
-                            </div>
-                            <div
-                                class="text-box-hover bg-dark-gray h-100 d-flex align-items-center justify-content-center flex-column">
-                                <h1
-                                    class="text-outline text-outline-grey-color mb-10px ls-minus-2px fw-600 position-absolute bottom-minus-40px">
-                                    01</h1>
-                                <p class="d-inline-block w-70 mb-10px text-white opacity-5 lg-w-90">Understanding your
-                                    goals and challenges to set the right foundation for success.</p>
-                                <span class="alt-font fw-500 fs-20 text-white mb-20px">Discussion</span>
-                            </div>
-                        </div>
+                <div class="col">
+                    <div class="ld-process-card">
+                        <span class="ld-process-num">01</span>
+                        <i class="fas fa-comments ld-process-icon"></i>
+                        <h4>Discussion</h4>
+                        <p>Understanding your goals and challenges to set the right foundation for success.</p>
                     </div>
                 </div>
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-11 border-0 overflow-visible">
-                    <div
-                        class="text-box-wrapper align-items-center d-flex position-relative overflow-hidden border-radius-6px">
-                        <div class="text-center w-100">
-                            <div class="text-box last-paragraph-no-margin p-20">
-                                <i class="fas fa-bullseye w-110px mb-20px d-block mx-auto fa-3x"></i>
-                                <span class="alt-font text-dark-gray fw-600 fs-20">Strategy</span>
-                            </div>
-                            <div
-                                class="text-box-hover bg-dark-gray h-100 d-flex align-items-center justify-content-center flex-column">
-                                <h1
-                                    class="text-outline text-outline-grey-color mb-10px ls-minus-2px fw-600 position-absolute bottom-minus-40px">
-                                    02</h1>
-                                <p class="d-inline-block w-70 mb-10px text-white opacity-5 lg-w-90">Developing
-                                    actionable plans tailored to your business needs.</p>
-                                <span class="alt-font fw-500 fs-20 text-white mb-20px">Strategy</span>
-                            </div>
-                        </div>
+                <div class="col">
+                    <div class="ld-process-card">
+                        <span class="ld-process-num">02</span>
+                        <i class="fas fa-bullseye ld-process-icon"></i>
+                        <h4>Strategy</h4>
+                        <p>Developing actionable plans tailored to your business needs.</p>
                     </div>
                 </div>
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-11 border-0 overflow-visible">
-                    <div
-                        class="text-box-wrapper align-items-center d-flex position-relative overflow-hidden border-radius-6px">
-                        <div class="text-center w-100">
-                            <div class="text-box last-paragraph-no-margin p-20">
-                                <i class="fas fa-tools w-110px mb-20px d-block mx-auto fa-3x"></i>
-                                <span class="alt-font text-dark-gray fw-600 fs-20">Execute</span>
-                            </div>
-                            <div
-                                class="text-box-hover bg-dark-gray h-100 d-flex align-items-center justify-content-center flex-column">
-                                <h1
-                                    class="text-outline text-outline-grey-color mb-10px ls-minus-2px fw-600 position-absolute bottom-minus-40px">
-                                    03</h1>
-                                <p class="d-inline-block w-70 mb-10px text-white opacity-5 lg-w-90">Turning strategies
-                                    into action through development and testing.</p>
-                                <span class="alt-font fw-500 fs-20 text-white mb-20px">Execute</span>
-                            </div>
-                        </div>
+                <div class="col">
+                    <div class="ld-process-card">
+                        <span class="ld-process-num">03</span>
+                        <i class="fas fa-tools ld-process-icon"></i>
+                        <h4>Execute</h4>
+                        <p>Turning strategies into action through development and testing.</p>
                     </div>
                 </div>
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-11 border-0 overflow-visible">
-                    <div
-                        class="text-box-wrapper align-items-center d-flex position-relative overflow-hidden border-radius-6px">
-                        <div class="text-center w-100">
-                            <div class="text-box last-paragraph-no-margin p-20">
-                                <i class="fas fa-rocket w-110px mb-20px d-block mx-auto fa-3x"></i>
-                                <span class="alt-font text-dark-gray fw-600 fs-20">Launch</span>
-                            </div>
-                            <div
-                                class="text-box-hover bg-dark-gray h-100 d-flex align-items-center justify-content-center flex-column">
-                                <h1
-                                    class="text-outline text-outline-grey-color mb-10px ls-minus-2px fw-600 position-absolute bottom-minus-40px">
-                                    04</h1>
-                                <p class="d-inline-block w-70 mb-10px text-white opacity-5 lg-w-90">Deploying your
-                                    solution and ensuring it meets your expectations.</p>
-                                <span class="alt-font fw-500 fs-20 text-white mb-20px">Launch</span>
-                            </div>
-                        </div>
+                <div class="col">
+                    <div class="ld-process-card">
+                        <span class="ld-process-num">04</span>
+                        <i class="fas fa-rocket ld-process-icon"></i>
+                        <h4>Launch</h4>
+                        <p>Deploying your solution and ensuring it meets your expectations.</p>
                     </div>
                 </div>
-                <!-- end features box item -->
             </div>
         </div>
     </section>
@@ -499,7 +442,7 @@
                         class="bg-base-color fw-700 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px sm-m-5px d-inline-block align-middle">
                         hurray</div>
                     <div class="fs-18 fw-500 text-dark-gray d-inline-block align-middle">Let's make something great work
-                        together. <a href="#" class="text-dark-gray text-decoration-line-bottom fw-700">Got a project in
+                        together. <a href="#contact" class="text-dark-gray text-decoration-line-bottom fw-700">Got a project in
                             mind?</a>
                     </div>
                 </div>
@@ -640,7 +583,7 @@
     <!-- end section -->
 
     <!-- start section -->
-    <section class="pt-0 bg-solitude-blue background-position-center-top big-section"
+    <section id="services" class="pt-0 bg-solitude-blue background-position-center-top big-section"
         style="background-image: url(images/vertical-line-bg-small.svg)">
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center"
@@ -652,11 +595,10 @@
                         <div class="feature-box-icon min-h-150px sm-min-h-100px mb-20 z-index-9">
                             <i class="line-icon-Management icon-extra-large text-white"></i>
                         </div>
-                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">design</div>
+                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">websites</div>
                         <div class="feature-box-content last-paragraph-no-margin">
-                            <span class="d-inline-block text-white mb-5px fs-18">Design research</span>
-                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">We conduct thorough research to craft
-                                designs that resonate with your audience and align with your brand identity.</p>
+                            <span class="d-inline-block text-white mb-5px fs-18">Websites</span>
+                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">Modern. Fast. Scalable. We design and build high-performance websites tailored to your business goals.</p>
                         </div>
                         <div class="feature-box-overlay bg-base-color"></div>
                     </div>
@@ -669,11 +611,10 @@
                         <div class="feature-box-icon min-h-150px sm-min-h-100px mb-20 z-index-9">
                             <i class="line-icon-Megaphone icon-extra-large text-white"></i>
                         </div>
-                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">strategy</div>
+                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">automation</div>
                         <div class="feature-box-content last-paragraph-no-margin">
-                            <span class="d-inline-block text-white mb-5px fs-18">Brand strategy</span>
-                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">We develop strategies that position your
-                                brand for success, ensuring consistent messaging across all channels.</p>
+                            <span class="d-inline-block text-white mb-5px fs-18">AI Automation</span>
+                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">Smarter. Faster. Better. Intelligent workflows that save time and reduce errors across your operations.</p>
                         </div>
                         <div class="feature-box-overlay bg-base-color"></div>
                     </div>
@@ -686,11 +627,10 @@
                         <div class="feature-box-icon min-h-150px sm-min-h-100px mb-20 z-index-9">
                             <i class="line-icon-Add-Bag icon-extra-large text-white"></i>
                         </div>
-                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">eCommerce</div>
+                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">branding</div>
                         <div class="feature-box-content last-paragraph-no-margin">
-                            <span class="d-inline-block text-white mb-5px fs-18">eCommerce solutions</span>
-                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">We create custom eCommerce solutions to
-                                streamline your online sales and improve customer experience.</p>
+                            <span class="d-inline-block text-white mb-5px fs-18">Branding</span>
+                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">Memorable. Powerful. Identity systems and visual design that make your business stand out.</p>
                         </div>
                         <div class="feature-box-overlay bg-base-color"></div>
                     </div>
@@ -703,12 +643,10 @@
                         <div class="feature-box-icon min-h-150px sm-min-h-100px mb-20 z-index-9">
                             <i class="line-icon-Gears icon-extra-large text-white"></i>
                         </div>
-                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">development
-                        </div>
+                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">marketing</div>
                         <div class="feature-box-content last-paragraph-no-margin">
-                            <span class="d-inline-block text-white mb-5px fs-18">Website development</span>
-                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">We design, build fast, secure, and
-                                scalable websites tailored to meet your business goals.</p>
+                            <span class="d-inline-block text-white mb-5px fs-18">Digital Marketing</span>
+                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">Reach. Engage. Grow. Campaigns and strategies that connect you with the right audience.</p>
                         </div>
                         <div class="feature-box-overlay bg-base-color"></div>
                     </div>
@@ -722,33 +660,15 @@
                         <div class="feature-box-icon min-h-150px sm-min-h-100px mb-20 z-index-9">
                             <i class="line-icon-Gears icon-extra-large text-white"></i>
                         </div>
-                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">automation</div>
+                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">support</div>
                         <div class="feature-box-content last-paragraph-no-margin">
-                            <span class="d-inline-block text-white mb-5px fs-18">Process automation</span>
-                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">We design automated processes to reduce
-                                errors, and save time across your operations.</p>
+                            <span class="d-inline-block text-white mb-5px fs-18">Support</span>
+                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">Always. Everywhere. Ongoing maintenance and dedicated support to keep your digital presence running smoothly.</p>
                         </div>
                         <div class="feature-box-overlay bg-base-color"></div>
                     </div>
                 </div>
 
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-07 transition-inner-all">
-                    <div
-                        class="hover-box dark-hover feature-box p-55px lg-p-30px overflow-hidden bg-dark-slate-blue text-start box-shadow-double-large-hover">
-                        <div class="feature-box-icon min-h-150px sm-min-h-100px mb-20 z-index-9">
-                            <i class="line-icon-Address-Book2 icon-extra-large text-white"></i>
-                        </div>
-                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">content</div>
-                        <div class="feature-box-content last-paragraph-no-margin">
-                            <span class="d-inline-block text-white mb-5px fs-18">Content management</span>
-                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">We provide content management solutions to
-                                ensure your website remains dynamic and engaging.</p>
-                        </div>
-                        <div class="feature-box-overlay bg-base-color"></div>
-                    </div>
-                </div>
                 <!-- end features box item -->
             </div>
         </div>
@@ -766,19 +686,19 @@
                         <!-- start client item -->
                         <div class="swiper-slide">
                             <div class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 text-dark-gray fw-600 ls-minus-5px">
-                                marketing</div>
+                                prepare</div>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
                         <div class="swiper-slide">
                             <div
                                 class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 fw-600 text-outline text-outline-color-extra-medium-gray ls-minus-5px">
-                                analysis</div>
+                                launch</div>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
                         <div class="swiper-slide">
-                            <div class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 text-dark-gray fw-600 ls-minus-5px">strategy
+                            <div class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 text-dark-gray fw-600 ls-minus-5px">grow
                             </div>
                         </div>
                         <!-- end client item -->
@@ -786,12 +706,12 @@
                         <div class="swiper-slide">
                             <div
                                 class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 fw-600 text-outline text-outline-color-extra-medium-gray ls-minus-5px">
-                                planning</div>
+                                websites</div>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
                         <div class="swiper-slide">
-                            <div class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 text-dark-gray fw-600 ls-minus-5px">analysis
+                            <div class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 text-dark-gray fw-600 ls-minus-5px">branding
                             </div>
                         </div>
                         <!-- end client item -->
@@ -799,7 +719,7 @@
                         <div class="swiper-slide">
                             <div
                                 class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 fw-600 text-outline text-outline-color-extra-medium-gray ls-minus-5px">
-                                strategy</div>
+                                automation</div>
                         </div>
                         <!-- end client item -->
                     </div>
@@ -808,7 +728,79 @@
         </div>
     </section>
     <!-- end section -->
-    <section class="mt-0 mb-1 pt-0 pb-2 overflow-hidden bg-solitude-blue">
+
+    <!-- start portfolio section -->
+    <section id="portfolio" class="bg-solitude-blue pt-0 pb-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-7 text-center"
+                    data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-12 lh-40 fw-700 border-radius-100px bg-white d-inline-flex box-shadow-medium-bottom">Our Work</span>
+                    <h3 class="text-dark-gray fw-700 ls-minus-1px">Featured Client Projects</h3>
+                    <p class="w-80 mx-auto">From digital marketing campaigns to full website builds — see how we help businesses grow online.</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 justify-content-center"
+                data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                <div class="col mb-30px">
+                    <a href="./Client/Myhomes-Digital.html" class="d-block border-radius-6px overflow-hidden box-shadow-quadruple-large-hover">
+                        <div class="position-relative">
+                            <img src="image/C1.png" alt="My Homes" class="w-100">
+                            <span class="position-absolute bottom-15px left-15px text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Digital</span>
+                        </div>
+                        <div class="bg-white p-20px">
+                            <span class="d-block alt-font fw-600 text-dark-gray fs-18">My Homes</span>
+                            <span class="fs-14 text-medium-gray">Retail · Digital Marketing</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-30px">
+                    <a href="./Client/Pioneers-Web.html" class="d-block border-radius-6px overflow-hidden box-shadow-quadruple-large-hover">
+                        <div class="position-relative">
+                            <img src="image/PC1.png" alt="Pioneers Cleaning" class="w-100">
+                            <span class="position-absolute bottom-15px left-15px text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Website</span>
+                        </div>
+                        <div class="bg-white p-20px">
+                            <span class="d-block alt-font fw-600 text-dark-gray fs-18">Pioneers Cleaning</span>
+                            <span class="fs-14 text-medium-gray">Cleaning · Web Development</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-30px">
+                    <a href="./Client/SuperCleaningLanka-Web.html" class="d-block border-radius-6px overflow-hidden box-shadow-quadruple-large-hover">
+                        <div class="position-relative">
+                            <img src="image/PC2.png" alt="Super Cleaning Lanka" class="w-100">
+                            <span class="position-absolute bottom-15px left-15px text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Website</span>
+                        </div>
+                        <div class="bg-white p-20px">
+                            <span class="d-block alt-font fw-600 text-dark-gray fs-18">Super Cleaning Lanka</span>
+                            <span class="fs-14 text-medium-gray">Cleaning · Web Development</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-30px">
+                    <a href="./Client/SmileDental-Web.html" class="d-block border-radius-6px overflow-hidden box-shadow-quadruple-large-hover">
+                        <div class="position-relative">
+                            <img src="image/SD1.png" alt="Smile Dental" class="w-100">
+                            <span class="position-absolute bottom-15px left-15px text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Website</span>
+                        </div>
+                        <div class="bg-white p-20px">
+                            <span class="d-block alt-font fw-600 text-dark-gray fs-18">Smile Dental</span>
+                            <span class="fs-14 text-medium-gray">Healthcare · Web Development</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto text-center">
+                    <a href="./Client.html" class="btn btn-large btn-dark-gray btn-round-edge btn-box-shadow">View All Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end portfolio section -->
+
+    <section id="contact" class="mt-0 mb-1 pt-0 pb-2 overflow-hidden bg-solitude-blue">
         <div class="container">
             <div class="border-radius-6px p-8 md-p-6 sm-p-10 position-relative overflow-hidden">
                 <div class="row justify-content-center mb-5">
@@ -946,38 +938,42 @@
     <!-- start footer -->
     <footer class="bg-solitude-blue p-0 position-relative">
         <div id="particles-04" class="position-absolute h-100 top-0 left-0 z-index-minus-1 w-100" data-particle="true"
-            data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#b7b9be", "#dd6531"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'>
+            data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#333333", "#FF6A00"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'>
         </div>
         <div class="container">
             <div class="row justify-content-center pt-3 sm-pt-50px">
                 <!-- start footer column -->
                 <div class="col-7 col-lg-3 col-md-12 col-sm-6 text-md-center text-lg-start md-mb-30px">
-                    <a href="#" class="footer-logo mb-15px md-mb-20px d-inline-block"><img src="image/Logo.png"
-                            data-at2x="image/Logo.png" alt=""></a>
-                    <p class="mb-20px">Innovative solutions designed to elevate your business and drive success in the
-                        digital era.</p>
+                    <a href="./index.html" class="footer-logo launchdok-logo mb-15px md-mb-20px d-inline-block">
+                        <img src="image/LaunchDok-mark.svg" alt="" class="launchdok-logo-mark">
+                        <span class="launchdok-logo-text">Launch<span class="ld-accent">Dok</span></span>
+                    </a>
+                    <p class="mb-20px">Building digital presence that launches businesses into the future. Prepare · Launch · Grow.</p>
                 </div>
                 <!-- end footer column -->
                 <!-- start footer column -->
                 <div class="col-5 col-lg-2 offset-xl-1 col-md-3 col-sm-6 md-mb-30px">
                     <span class="alt-font d-block text-dark-gray fw-600 mb-10px fs-19">Company</span>
                     <ul>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Process</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#company">Company</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="./Client.html">Client</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <!-- end footer column -->
                 <!-- start footer column -->
                 <div class="col-lg-3 col-md-4 col-sm-6 xs-mb-30px">
                     <span class="alt-font d-block text-dark-gray fw-600 mb-10px fs-19">Get in touch</span>
-                    <p class="m-0"><span class="fw-600"><i
+                    <p class="m-0 fs-16"><span class="fw-600"><i
                                 class="feather icon-feather-phone-call text-dark-gray icon-small me-10px"></i></span><a
-                            href="tel:9760246417">076 024 6417</a></p>
-                    <p class="m-0"><span class="fw-600"><i
+                            href="tel:9760246417"> 071 167 0179</a></p>
+                    <p class="m-0 fs-16"><span class="fw-600"><i
+                                class="feather icon-feather-phone-call text-dark-gray icon-small me-10px"></i></span><a
+                            href="tel:9760246417"> 077 730 7129</a></p>
+                    <p class="m-0 fs-16"><span class="fw-600"><i
                                 class="feather icon-feather-mail text-dark-gray icon-small me-10px"></i></span><a
-                            href="mailto:info@domain.com">info@nextdigitalsolutions.com</a></p>
+                            href="mailto:hello@launchdok.com">hello@launchdok.com</a></p>
                 </div>
                 <!-- end footer column -->
                 <!-- start footer column -->
@@ -1009,7 +1005,7 @@
                 <!-- start copyright -->
                 <div
                     class="col-lg-6 pt-25px pb-25px md-pt-0 fs-16 last-paragraph-no-margin order-2 order-lg-1 text-center ">
-                    <p>&copy; 2025 All rights reserved by Next Digital Solutions</p>
+                    <p>&copy; 2026 All rights reserved by LaunchDok</p>
                 </div>
                 <!-- end copyright -->
             </div>
@@ -1018,8 +1014,8 @@
     <!-- end footer -->
     <!-- start sticky -->
     <div class="sticky-wrap d-none d-lg-inline-block p-1" data-animation-delay="100" data-shadow-animation="true">
-        <span class="fs-16"><i class="bi bi-envelope icon-small me-10px"></i>Get our service — <a
-                href="mailto:info@domain.com" class="text-decoration-line-bottom fw-500">Send a message</a></span>
+        <span class="fs-16 text-white"><i class="bi bi-envelope icon-small me-10px"></i>Get our service — <a
+                href="mailto:hello@launchdok.com" class="text-white text-decoration-line-bottom fw-500">Send a message</a></span>
     </div>
     <!-- end sticky -->
     <!-- start scroll progress -->

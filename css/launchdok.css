@@ -1,0 +1,428 @@
+/* LaunchDok Brand Theme */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --ld-orange: #FF6A00;
+    --ld-black: #0D0D0D;
+    --ld-blue: #0077FF;
+    --ld-green: #00C853;
+    --base-color: #FF6A00;
+    --dark-gray: #ffffff;
+    --medium-gray: #a8a8a8;
+    --very-light-gray: #1a1a1a;
+    --extra-medium-gray: #2a2a2a;
+    --solitude-blue: #111111;
+    --yellow: #FF6A00;
+    --alt-font: 'Sora', sans-serif;
+    --primary-font: 'Sora', sans-serif;
+}
+
+body.launchdok-theme {
+    font-family: 'Sora', sans-serif !important;
+    background-color: var(--ld-black) !important;
+    color: #ffffff;
+}
+
+.launchdok-theme .alt-font,
+.launchdok-theme h1, .launchdok-theme h2, .launchdok-theme h3,
+.launchdok-theme h4, .launchdok-theme h5, .launchdok-theme h6 {
+    font-family: 'Sora', sans-serif !important;
+}
+
+/* Logo */
+.launchdok-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none !important;
+}
+.launchdok-logo-mark {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+.launchdok-logo-text {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+.launchdok-logo-text .ld-accent { color: var(--ld-orange); }
+.launchdok-logo-tagline {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #888;
+    margin-top: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Header */
+.launchdok-theme header .navbar {
+    background-color: rgba(13, 13, 13, 0.95) !important;
+    border-bottom: 1px solid rgba(255, 106, 0, 0.15);
+}
+.launchdok-theme .navbar .navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-family: 'Sora', sans-serif !important;
+}
+.launchdok-theme .navbar .navbar-nav .nav-link:hover,
+.launchdok-theme .navbar .navbar-nav .nav-link.active {
+    color: var(--ld-orange) !important;
+}
+.launchdok-theme .navbar-toggler-line {
+    background-color: #ffffff;
+}
+.launchdok-theme .dropdown-menu {
+    background-color: #1a1a1a !important;
+    border: 1px solid rgba(255, 106, 0, 0.2) !important;
+}
+.launchdok-theme .dropdown-menu a,
+.launchdok-theme .navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu li a {
+    color: #ffffff !important;
+    border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+.launchdok-theme .dropdown-menu a:hover,
+.launchdok-theme .navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu li a:hover {
+    background-color: rgba(255, 106, 0, 0.12) !important;
+    color: var(--ld-orange) !important;
+}
+
+/* Buttons */
+.launchdok-theme .btn-base-color {
+    background-color: var(--ld-orange) !important;
+    border-color: var(--ld-orange) !important;
+    color: #ffffff !important;
+}
+.launchdok-theme .btn-base-color:hover {
+    background-color: #e55f00 !important;
+    border-color: #e55f00 !important;
+    color: #ffffff !important;
+}
+.launchdok-theme .btn-dark-gray {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.25) !important;
+}
+.launchdok-theme .btn-dark-gray:hover,
+.launchdok-theme .btn-dark-gray:active {
+    background-color: var(--ld-orange) !important;
+    border-color: var(--ld-orange) !important;
+    color: #ffffff !important;
+}
+.launchdok-theme .btn-expand-ltr,
+.launchdok-theme .btn-expand-ltr.text-light-gray {
+    color: #ffffff !important;
+}
+.launchdok-theme .btn-link.text-dark-gray,
+.launchdok-theme .btn-link.btn-extra-large.text-dark-gray {
+    color: #ffffff !important;
+}
+.launchdok-theme .btn-link.text-dark-gray:hover {
+    color: var(--ld-orange) !important;
+}
+
+/* Hero */
+.launchdok-hero {
+    background: var(--ld-black);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.launchdok-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--ld-orange), transparent);
+    opacity: 0.6;
+    transform: translateY(-50%);
+}
+.launchdok-hero-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,106,0,0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+.launchdok-hero h1 {
+    font-size: clamp(48px, 8vw, 90px);
+    font-weight: 700;
+    line-height: 1.05;
+    color: #ffffff;
+}
+.launchdok-hero h1 .ld-accent { color: var(--ld-orange); }
+.launchdok-hero .hero-tagline {
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+/* Sections */
+.launchdok-theme .bg-solitude-blue,
+.launchdok-theme section.bg-solitude-blue {
+    background-color: var(--ld-black) !important;
+}
+.launchdok-theme .text-dark-gray {
+    color: #ffffff !important;
+}
+.launchdok-theme .text-medium-gray {
+    color: #888 !important;
+}
+.launchdok-theme .bg-white {
+    background-color: #1a1a1a !important;
+}
+.launchdok-theme .box-shadow-quadruple-large,
+.launchdok-theme .box-shadow-quadruple-large-hover:hover {
+    box-shadow: 0 10px 40px rgba(255, 106, 0, 0.08) !important;
+}
+
+/* Service cards */
+.ld-service-card {
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 106, 0, 0.15);
+    border-radius: 8px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+.ld-service-card:hover {
+    border-color: var(--ld-orange);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(255, 106, 0, 0.15);
+}
+.ld-service-card .ld-icon {
+    font-size: 36px;
+    color: var(--ld-orange);
+    margin-bottom: 20px;
+}
+.ld-service-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.ld-service-card p {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
+
+/* Feature boxes dark */
+.launchdok-theme .hover-box.dark-hover.feature-box {
+    background-color: #1a1a1a !important;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+.launchdok-theme .feature-box-overlay.bg-base-color {
+    background-color: var(--ld-orange) !important;
+}
+
+/* Portfolio cards */
+.launchdok-theme #portfolio .bg-white {
+    background-color: #1a1a1a !important;
+}
+.launchdok-theme #portfolio .bg-white span {
+    color: #ffffff !important;
+}
+
+/* Footer */
+.launchdok-theme footer {
+    background-color: #080808 !important;
+    border-top: 1px solid rgba(255, 106, 0, 0.15);
+}
+.launchdok-theme footer .text-dark-gray,
+.launchdok-theme footer p,
+.launchdok-theme footer a {
+    color: #cccccc !important;
+}
+.launchdok-theme footer a:hover {
+    color: var(--ld-orange) !important;
+}
+.launchdok-theme footer .divider-style-03-01 {
+    border-color: rgba(255, 106, 0, 0.15) !important;
+}
+
+/* Contact form */
+.launchdok-theme .form-control {
+    background-color: #1a1a1a !important;
+    border-color: rgba(255,255,255,0.1) !important;
+    color: #ffffff !important;
+}
+.launchdok-theme .form-control::placeholder {
+    color: #666 !important;
+}
+
+/* Cursor */
+.launchdok-theme .custom-cursor .circle-cursor-inner {
+    background-color: var(--ld-orange);
+}
+.launchdok-theme .custom-cursor .circle-cursor-outer {
+    border-color: var(--ld-orange);
+}
+
+/* Client page portfolio */
+.launchdok-theme .portfolio-box .portfolio-image {
+    border: 1px solid rgba(255,106,0,0.2);
+}
+.launchdok-theme .portfolio-filter .nav a {
+    color: #888 !important;
+}
+.launchdok-theme .portfolio-filter .nav.active a,
+.launchdok-theme .portfolio-filter .nav a:hover {
+    color: var(--ld-orange) !important;
+}
+
+/* Particles override */
+.launchdok-theme .opacity-light {
+    background-color: rgba(13, 13, 13, 0.7) !important;
+}
+
+/* Sticky bar */
+.launchdok-theme .sticky-wrap {
+    background: #1a1a1a;
+    border: 1px solid rgba(255,106,0,0.2);
+    color: #fff;
+}
+
+/* Hero & sliders */
+.launchdok-theme .swiper-slide .text-dark,
+.launchdok-theme .swiper-slide .text-dark-gray,
+.launchdok-theme .swiper-slide .text-dark a {
+    color: #ffffff !important;
+}
+.launchdok-theme .swiper-slide a.text-decoration-line-bottom {
+    color: var(--ld-orange) !important;
+}
+.launchdok-theme .progress-bar.bg-dark-gray,
+.launchdok-theme .progress-bar-percent.bg-dark-gray {
+    background-color: var(--ld-orange) !important;
+}
+.launchdok-theme .text-box-hover.bg-dark-gray {
+    background-color: #1a1a1a !important;
+    border: 1px solid rgba(255,106,0,0.3);
+}
+.launchdok-theme .bg-dark-slate-blue {
+    background-color: #1a1a1a !important;
+}
+.launchdok-theme .header-dark.bg-dark-gray,
+.launchdok-theme header .navbar.header-dark {
+    background-color: rgba(13, 13, 13, 0.98) !important;
+}
+.launchdok-theme .navbar-brand img.default-logo,
+.launchdok-theme .navbar-brand img.alt-logo,
+.launchdok-theme .navbar-brand img.mobile-logo {
+    display: none;
+}
+.launchdok-theme .footer-logo img {
+    display: none;
+}
+.launchdok-theme .footer-logo.launchdok-logo .launchdok-logo-tagline {
+    display: none;
+}
+
+/* Dark backgrounds — keep surfaces dark even though --dark-gray is white for text */
+.launchdok-theme .bg-dark-gray,
+.launchdok-theme header .navbar.bg-dark-gray {
+    background-color: var(--ld-black) !important;
+}
+.launchdok-theme .border-color-dark-gray {
+    border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Hero slider pagination — orange active bullet, not green */
+.launchdok-theme .swiper-number-pagination-style-02 .swiper-number .swiper-pagination-bullet {
+    color: var(--ld-orange) !important;
+}
+.launchdok-theme .swiper-number-pagination-style-02 .swiper-number .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    color: #ffffff !important;
+}
+.launchdok-theme .swiper-number-pagination-style-02 .swiper-number .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
+    background: var(--ld-orange) !important;
+}
+
+/* Sticky side bar — Get our service / Send a message */
+.launchdok-theme .sticky-wrap a,
+.launchdok-theme .sticky-wrap div,
+.launchdok-theme .sticky-wrap span,
+.launchdok-theme .sticky-wrap p {
+    color: #ffffff !important;
+}
+.launchdok-theme .sticky-wrap a:hover {
+    color: var(--ld-orange) !important;
+}
+
+/* Process steps — Discussion / Strategy / Execute / Launch */
+.ld-process-steps {
+    overflow: hidden;
+}
+.ld-process-card {
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 106, 0, 0.15);
+    border-radius: 8px;
+    padding: 28px 22px;
+    height: 100%;
+    min-height: 210px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ld-process-card:hover {
+    border-color: var(--ld-orange);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 106, 0, 0.12);
+}
+.ld-process-num {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ld-orange);
+    letter-spacing: 2px;
+}
+.ld-process-icon {
+    font-size: 1.75rem;
+    color: var(--ld-orange);
+    margin-bottom: 14px;
+    line-height: 1;
+}
+.ld-process-card h4 {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+.ld-process-card p {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 0;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+@media (max-width: 767px) {
+    .ld-process-card {
+        min-height: auto;
+        padding: 24px 20px;
+    }
+}
