@@ -1,312 +1,204 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Client Portfolio — LaunchDok</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <!-- favicon icon -->
-    <link rel="shortcut icon" href="image/favicon.png">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    <!-- google fonts preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- style sheets and font icons  -->
-    <link rel="stylesheet" href="css/vendors.min.css" />
-    <link rel="stylesheet" href="css/icon.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="demos/style/style.css" />
-    <link rel="stylesheet" href="css/launchdok.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LaunchDok client portfolio — premium websites, digital marketing campaigns, and brand projects for businesses across industries.">
+  <meta name="theme-color" content="#050505">
+  <title>Client Portfolio — LaunchDok</title>
+  <link rel="icon" href="image/navicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/launchdok-premium.css">
 </head>
+<body>
 
-<body data-mobile-nav-style="classic" class="custom-cursor launchdok-theme bg-dark-gray">
-    <div id="particles-01" data-particle="true"
-        data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#333333", "#FF6A00"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
-        class="position-absolute h-100 top-0 left-0 z-index-minus-1"></div>
-
-    <!-- start cursor -->
-    <div class="cursor-page-inner">
-        <div class="circle-cursor circle-cursor-inner"></div>
-        <div class="circle-cursor circle-cursor-outer"></div>
+  <header class="ld-nav scrolled" id="ld-nav">
+    <div class="ld-nav-inner">
+      <a href="./index.html" class="ld-logo" aria-label="LaunchDok home">
+        <img src="image/navicon.png" alt="" width="34" height="34">
+        <span class="ld-logo-text">Launch<span>Dok</span></span>
+      </a>
+      <nav class="ld-nav-links" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./index.html#services">Services</a>
+        <a href="./Client.html" class="ld-nav-active">Work</a>
+        <a href="./index.html#process">Process</a>
+        <a href="./index.html#packages">Packages</a>
+        <a href="./index.html#faq">FAQ</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+      <a href="./index.html#contact" class="ld-btn ld-btn-nav">Start Your Project</a>
+      <button class="ld-menu-toggle" id="ld-menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <!-- end cursor -->
-    <!-- start Topbar header -->
-    <header class="header-with-topbar">
-        <!-- start navigation -->
-        <nav class="navbar navbar-expand-lg header-dark bg-dark-gray responsive-sticky">
-            <div class="container-fluid">
-                <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand launchdok-logo" href="./index.html">
-                        <img src="image/LaunchDok-mark.svg" alt="" class="launchdok-logo-mark">
-                        <span>
-                            <span class="launchdok-logo-text">Launch<span class="ld-accent">Dok</span></span>
-                            <span class="launchdok-logo-tagline">Prepare · Launch · Grow</span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-auto menu-order position-static">
-                    <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-line"></span>
-                        <span class="navbar-toggler-line"></span>
-                        <span class="navbar-toggler-line"></span>
-                        <span class="navbar-toggler-line"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav fw-600">
-                            <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="./index.html#company" class="nav-link">Company</a>
-                            </li>
-                            <li class="nav-item dropdown dropdown-with-icon-style02">
-                                <a href="./index.html#services" class="nav-link">Services</a>
-                                <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a href="./index.html#services"><i class="fa-solid fa-globe fs-16 me-2 text-base-color"></i>Websites</a></li>
-                                    <li><a href="./index.html#services"><i class="fa-solid fa-robot fs-16 me-2 text-base-color"></i>AI Automation</a></li>
-                                    <li><a href="./index.html#services"><i class="fa-solid fa-pen-nib fs-16 me-2 text-base-color"></i>Branding</a></li>
-                                    <li><a href="./index.html#services"><i class="fa-solid fa-bullhorn fs-16 me-2 text-base-color"></i>Digital Marketing</a></li>
-                                    <li><a href="./index.html#services"><i class="fa-solid fa-headset fs-16 me-2 text-base-color"></i>Support</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a href="./Client.html" class="nav-link active">Client</a>
-                            </li>
-                            <li class="nav-item"><a href="./index.html#contact" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
-                    <div class="header-icon">
-                        <div class="header-button">
-                            <a href="./index.html#contact" class="btn btn-small btn-round-edge btn-base-color btn-box-shadow">Let's
-                                discuss</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- end navigation -->
-    </header>
-    <!-- end Topbar header -->
+  </header>
 
-        <!-- start page title -->
-        <section class="pb-0 ipad-top-space-margin md-pt-0">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-12 col-xl-6 col-lg-8 text-center position-relative page-title-double-large">
-                        <div class="d-flex flex-column justify-content-center extra-very-small-screen">
-                            <h1 class="text-dark-gray alt-font ls-minus-1px fw-700 mb-20px">Client Portfolio</h1>
-                            <p class="text-medium-gray mb-0">Sample work from LaunchDok — websites, digital marketing, and brand projects.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end page title -->
-        <!-- start section -->
-        <section class="pt-0 ps-6 pe-6 xxl-ps-4 xxl-pe-4 lg-px-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <!-- filter navigation -->
-                        <ul class="portfolio-filter nav nav-tabs justify-content-center border-0 fw-500 alt-font pb-5">
-                            <li class="nav active"><a data-filter="*" href="#">All</a></li>
-                            <li class="nav"><a data-filter=".digital" href="#">Digital</a></li>
-                            <li class="nav"><a data-filter=".branding" href="#">Branding</a></li>
-                            <li class="nav"><a data-filter=".web" href="#">Web</a></li>
-                        </ul>
-                        <!-- end filter navigation --> 
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 filter-content">
-                        <ul class="portfolio-creative portfolio-wrapper grid-loading grid grid-4col xxl-grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-large text-center">
-                            <li class="grid-sizer"></li>
-                            <!-- start portfolio item -->
-                            <li class="grid-item selected digital transition-inner-all">
-                                <a href="./Client/IMglobalrealty-Digital.html">
-                                    <div class="portfolio-box">
-                                        <div class="portfolio-image" style="background: #b15d3b">
-                                            <img src="./image/C2.png" alt="" />
-                                        </div>
-                                        <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
-                                            <div class="text-uppercase portfolio-title mt-auto alt-font fs-26 fw-700 text-white" data-text="IM Global Realty"></div>
-                                            <span class="mt-auto d-inline-block text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Digital</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- end portfolio item -->
-                            <!-- start portfolio item -->
-                            <li class="grid-item selected digital transition-inner-all">
-                                <a href="./Client/Myhomes-Digital.html">
-                                    <div class="portfolio-box">
-                                        <div class="portfolio-image" style="background: #463e71">
-                                            <img src="./image/C1.png" alt="" />
-                                        </div>
-                                        <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
-                                            <div class="text-uppercase portfolio-title mt-auto alt-font fs-26 fw-700 text-white" data-text="My Homes"></div>
-                                            <span class="mt-auto d-inline-block text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Digital</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- end portfolio item -->
-                            <!-- start portfolio item -->
-                            <li class="grid-item selected web transition-inner-all">
-                                <a href="./Client/Pioneers-Web.html">
-                                    <div class="portfolio-box">
-                                        <div class="portfolio-image" style="background: #463e71">
-                                            <img src="./image/PC1.png" alt="Pioneers Cleaning" />
-                                        </div>
-                                        <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
-                                            <div class="text-uppercase portfolio-title mt-auto alt-font fs-26 fw-700 text-white" data-text="Pioneers Cleaning"></div>
-                                            <span class="mt-auto d-inline-block text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Website</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- end portfolio item -->
-                            <!-- start portfolio item -->
-                            <li class="grid-item selected web transition-inner-all">
-                                <a href="./Client/SuperCleaningLanka-Web.html">
-                                    <div class="portfolio-box">
-                                        <div class="portfolio-image" style="background: #b15d3b">
-                                            <img src="./image/PC2.png" alt="Super Cleaning Lanka" />
-                                        </div>
-                                        <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
-                                            <div class="text-uppercase portfolio-title mt-auto alt-font fs-26 fw-700 text-white" data-text="Super Cleaning Lanka"></div>
-                                            <span class="mt-auto d-inline-block text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Website</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- end portfolio item -->
-                            <!-- start portfolio item -->
-                            <li class="grid-item selected web transition-inner-all">
-                                <a href="./Client/TopCare-Web.html">
-                                    <div class="portfolio-box">
-                                        <div class="portfolio-image" style="background: #539868">
-                                            <img src="./image/PC3.png" alt="TopCare Cleaning" />
-                                        </div>
-                                        <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
-                                            <div class="text-uppercase portfolio-title mt-auto alt-font fs-26 fw-700 text-white" data-text="TopCare Cleaning"></div>
-                                            <span class="mt-auto d-inline-block text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Website</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- end portfolio item -->
-                            <!-- start portfolio item -->
-                            <li class="grid-item selected web transition-inner-all">
-                                <a href="./Client/SmileDental-Web.html">
-                                    <div class="portfolio-box">
-                                        <div class="portfolio-image" style="background: #e4ca36">
-                                            <img src="./image/SD1.png" alt="Smile Dental Hospitals" />
-                                        </div>
-                                        <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
-                                            <div class="text-uppercase portfolio-title mt-auto alt-font fs-26 fw-700 text-white" data-text="Smile Dental"></div>
-                                            <span class="mt-auto d-inline-block text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Website</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- end portfolio item -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
+  <nav class="ld-mobile-menu" id="ld-mobile-menu" aria-label="Mobile navigation">
+    <a href="./index.html">Home</a>
+    <a href="./index.html#services">Services</a>
+    <a href="./Client.html">Work</a>
+    <a href="./index.html#process">Process</a>
+    <a href="./index.html#packages">Packages</a>
+    <a href="./index.html#faq">FAQ</a>
+    <a href="./index.html#contact">Contact</a>
+    <a href="./index.html#contact" class="ld-btn ld-btn-primary" style="margin-top:24px;text-align:center;">Start Your Project</a>
+  </nav>
 
-    <!-- start footer -->
-    <footer class="bg-solitude-blue p-0 position-relative">
-        <div id="particles-04" class="position-absolute h-100 top-0 left-0 z-index-minus-1 w-100" data-particle="true"
-            data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#333333", "#FF6A00"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'>
+  <main>
+    <section class="ld-page-hero">
+      <div class="ld-container">
+        <span class="ld-label">Client Portfolio</span>
+        <h1>Work that makes businesses look <em style="font-style:normal;color:var(--ld-orange);">serious.</em></h1>
+        <p>Websites, digital marketing, and brand projects — explore how LaunchDok helps businesses launch and grow online.</p>
+      </div>
+    </section>
+
+    <section class="ld-section ld-section-alt" id="portfolio">
+      <div class="ld-container">
+        <div class="ld-portfolio-filters ld-reveal">
+          <button type="button" class="ld-filter-btn active" data-filter="all">All</button>
+          <button type="button" class="ld-filter-btn" data-filter="digital">Digital</button>
+          <button type="button" class="ld-filter-btn" data-filter="web">Websites</button>
         </div>
-        <div class="container">
-            <div class="row justify-content-center pt-3 sm-pt-50px">
-                <!-- start footer column -->
-                <div class="col-7 col-lg-3 col-md-12 col-sm-6 text-md-center text-lg-start md-mb-30px">
-                    <a href="./index.html" class="footer-logo launchdok-logo mb-15px md-mb-20px d-inline-block">
-                        <img src="image/LaunchDok-mark.svg" alt="" class="launchdok-logo-mark">
-                        <span class="launchdok-logo-text">Launch<span class="ld-accent">Dok</span></span>
-                    </a>
-                    <p class="mb-20px">Building digital presence that launches businesses into the future. Prepare · Launch · Grow.</p>
-                </div>
-                <!-- end footer column -->
-                <!-- start footer column -->
-                <div class="col-5 col-lg-2 offset-xl-1 col-md-3 col-sm-6 md-mb-30px">
-                    <span class="alt-font d-block text-dark-gray fw-600 mb-10px fs-19">Company</span>
-                    <ul>
-                        <li><a href="./index.html#company">Company</a></li>
-                        <li><a href="./index.html#services">Services</a></li>
-                        <li><a href="./Client.html">Client</a></li>
-                        <li><a href="./index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- end footer column -->
-                <!-- start footer column -->
-                <div class="col-lg-3 col-md-4 col-sm-6 xs-mb-30px">
-                    <span class="alt-font d-block text-dark-gray fw-600 mb-10px fs-19">Get in touch</span>
-                    <p class="m-0 fs-16"><span class="fw-600"><i
-                        class="feather icon-feather-phone-call text-dark-gray icon-small me-10px"></i></span><a
-                    href="tel:9760246417"> 071 167 0179</a></p>
-            <p class="m-0 fs-16"><span class="fw-600"><i
-                        class="feather icon-feather-phone-call text-dark-gray icon-small me-10px"></i></span><a
-                    href="tel:9760246417"> 077 730 7129</a></p>
-                    <p class="m-0"><span class="fw-600"><i
-                                class="feather icon-feather-mail text-dark-gray icon-small me-10px"></i></span><a
-                            href="mailto:hello@launchdok.com">hello@launchdok.com</a></p>
-                </div>
-                <!-- end footer column -->
-                <!-- start footer column -->
-                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
-                    <span class="alt-font d-block text-dark-gray fw-600 mb-10px fs-19">Newsletter</span>
-                    <p class="sm-mb-20px">Subscribe our newsletter to get the latest news and updates.</p>
-                    <div class="d-inline-block w-100 newsletter-style-02 position-relative">
-                        <form action="email-templates/subscribe-newsletter.php" method="post"
-                            class="position-relative w-100">
-                            <input class="bg-transparent border-color-extra-medium-gray w-100 form-control required"
-                                type="email" name="email" placeholder="Enter email address...">
-                            <input type="hidden" name="redirect" value="">
-                            <button class="btn submit" aria-label="submit"><i
-                                    class="icon feather icon-feather-mail icon-small text-base-color"></i></button>
-                            <div
-                                class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- end footer column -->
-            </div>
-            <div class="row justify-content-center align-items-center">
-                <!-- start divider -->
-                <div class="col-12 pt-2 ">
-                    <div class="divider-style-03 divider-style-03-01 border-color-extra-medium-gray"></div>
-                </div>
-                <!-- end divider -->
-                <!-- start copyright -->
-                <div
-                    class="col-lg-6 pt-25px pb-25px md-pt-0 fs-16 last-paragraph-no-margin order-2 order-lg-1 text-center ">
-                    <p>&copy; 2026 All rights reserved by LaunchDok</p>
-                </div>
-                <!-- end copyright -->
-            </div>
+
+        <div class="ld-portfolio-page-grid">
+          <div class="ld-portfolio-page-item ld-reveal" data-category="digital">
+            <a href="./Client/Myhomes-Digital.html" class="ld-portfolio-card">
+              <div class="ld-portfolio-thumb" style="background:#463e71">
+                <img src="image/C1.png" alt="My Homes digital marketing">
+                <span class="ld-portfolio-badge">Digital</span>
+                <span class="ld-portfolio-hover-title">My Homes</span>
+              </div>
+              <div class="ld-portfolio-body">
+                <div class="type">Retail · Digital Marketing</div>
+                <h3>My Homes</h3>
+                <p>Digital presence and marketing strategy for a retail brand entering the online space.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="ld-portfolio-page-item ld-reveal" data-category="digital">
+            <a href="./Client/IMglobalrealty-Digital.html" class="ld-portfolio-card">
+              <div class="ld-portfolio-thumb" style="background:#b15d3b">
+                <img src="image/C2.png" alt="IM Global Realty digital">
+                <span class="ld-portfolio-badge">Digital</span>
+                <span class="ld-portfolio-hover-title">IM Global Realty</span>
+              </div>
+              <div class="ld-portfolio-body">
+                <div class="type">Real Estate · Digital</div>
+                <h3>IM Global Realty</h3>
+                <p>Brand and digital marketing build for a real estate business expanding its online reach.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="ld-portfolio-page-item ld-reveal" data-category="web">
+            <a href="./Client/Pioneers-Web.html" class="ld-portfolio-card">
+              <div class="ld-portfolio-thumb" style="background:#463e71">
+                <img src="image/PC1.png" alt="Pioneers Cleaning website">
+                <span class="ld-portfolio-badge">Website</span>
+                <span class="ld-portfolio-hover-title">Pioneers Cleaning</span>
+              </div>
+              <div class="ld-portfolio-body">
+                <div class="type">Cleaning · Web Development</div>
+                <h3>Pioneers Cleaning</h3>
+                <p>Service-focused website with clear CTAs and trust signals for local lead generation.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="ld-portfolio-page-item ld-reveal" data-category="web">
+            <a href="./Client/SuperCleaningLanka-Web.html" class="ld-portfolio-card">
+              <div class="ld-portfolio-thumb" style="background:#b15d3b">
+                <img src="image/PC2.png" alt="Super Cleaning Lanka website">
+                <span class="ld-portfolio-badge">Website</span>
+                <span class="ld-portfolio-hover-title">Super Cleaning Lanka</span>
+              </div>
+              <div class="ld-portfolio-body">
+                <div class="type">Cleaning · Web Development</div>
+                <h3>Super Cleaning Lanka</h3>
+                <p>Modern cleaning company site with service pages, contact forms, and mobile-first design.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="ld-portfolio-page-item ld-reveal" data-category="web">
+            <a href="./Client/TopCare-Web.html" class="ld-portfolio-card">
+              <div class="ld-portfolio-thumb" style="background:#539868">
+                <img src="image/PC3.png" alt="TopCare Cleaning website">
+                <span class="ld-portfolio-badge">Website</span>
+                <span class="ld-portfolio-hover-title">TopCare Cleaning</span>
+              </div>
+              <div class="ld-portfolio-body">
+                <div class="type">Cleaning · Web Development</div>
+                <h3>TopCare Cleaning</h3>
+                <p>Professional maintenance and cleaning website built to convert visitors into enquiries.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="ld-portfolio-page-item ld-reveal" data-category="web">
+            <a href="./Client/SmileDental-Web.html" class="ld-portfolio-card">
+              <div class="ld-portfolio-thumb" style="background:#e4ca36">
+                <img src="image/SD1.png" alt="Smile Dental website">
+                <span class="ld-portfolio-badge">Website</span>
+                <span class="ld-portfolio-hover-title">Smile Dental</span>
+              </div>
+              <div class="ld-portfolio-body">
+                <div class="type">Healthcare · Web Development</div>
+                <h3>Smile Dental Hospitals</h3>
+                <p>Clinic website with services, doctor profiles, and appointment flow to earn patient trust.</p>
+              </div>
+            </a>
+          </div>
         </div>
-    </footer>
-    <!-- end footer -->
-        <!-- end footer -->
-        <!-- javascript libraries -->
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/vendors.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+
+        <div class="ld-portfolio-cta ld-reveal">
+          <p style="color:var(--ld-gray);margin-bottom:20px;font-size:var(--ld-body-lg);">Ready for your business to look this professional?</p>
+          <a href="./index.html#contact" class="ld-btn ld-btn-primary">Start Your Project</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ld-footer">
+    <div class="ld-container">
+      <div class="ld-footer-grid">
+        <div>
+          <a href="./index.html" class="ld-logo">
+            <img src="image/navicon.png" alt="" width="34" height="34">
+            <span class="ld-logo-text">Launch<span>Dok</span></span>
+          </a>
+          <p class="ld-footer-tagline">LaunchDok — Prepare · Launch · Grow.<br>Digital systems for businesses ready to grow.</p>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <a href="./index.html#services">Services</a>
+          <a href="./Client.html">Work</a>
+          <a href="./index.html#packages">Pricing</a>
+          <a href="./index.html#contact">Contact</a>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <a href="./index.html#services">Websites</a>
+          <a href="./index.html#services">Branding</a>
+          <a href="./index.html#services">AI Automation</a>
+          <a href="./index.html#capabilities">Everything We Handle</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="tel:+94711670179">071 167 0179</a>
+          <a href="mailto:hello@launchdok.com">hello@launchdok.com</a>
+          <a href="https://wa.me/94711670179" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="./Client.html">Client Portfolio</a>
+        </div>
+      </div>
+      <div class="ld-footer-bottom">&copy; 2026 LaunchDok. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/launchdok.js"></script>
+</body>
 </html>

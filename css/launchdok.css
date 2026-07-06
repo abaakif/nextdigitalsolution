@@ -328,7 +328,7 @@ body.launchdok-theme {
 .launchdok-theme .navbar-brand img.mobile-logo {
     display: none;
 }
-.launchdok-theme .footer-logo img {
+.launchdok-theme .footer-logo.launchdok-logo img {
     display: none;
 }
 .launchdok-theme .footer-logo.launchdok-logo .launchdok-logo-tagline {

@@ -1,1034 +1,542 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>LaunchDok — Prepare · Launch · Grow</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <!-- favicon icon -->
-    <link rel="shortcut icon" href="image/favicon.png">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    <!-- google fonts preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- style sheets and font icons  -->
-    <link rel="stylesheet" href="css/vendors.min.css" />
-    <link rel="stylesheet" href="css/icon.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="demos/style/style.css" />
-    <link rel="stylesheet" href="css/launchdok.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LaunchDok builds premium websites, branding, AI automation, and digital systems that help businesses look trusted, work smarter, and win more customers.">
+  <meta name="theme-color" content="#050505">
+  <title>LaunchDok — Prepare · Launch · Grow</title>
+  <link rel="icon" href="image/navicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/launchdok-premium.css">
+  <!--
+    Asset placement (also works as /public/ in Next.js):
+    image/navicon.png  → launchdok-icon.png
+    image/logo.png     → launchdok-logo.png
+    image/hero.png     → horizon-bg.png
+  -->
 </head>
+<body>
 
-<body data-mobile-nav-style="classic" class="custom-cursor launchdok-theme bg-dark-gray">
-    <div id="particles-01" data-particle="true"
-        data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#333333", "#FF6A00"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
-        class="position-absolute h-100 top-0 left-0 z-index-minus-1"></div>
-
-    <!-- start cursor -->
-    <div class="cursor-page-inner">
-        <div class="circle-cursor circle-cursor-inner"></div>
-        <div class="circle-cursor circle-cursor-outer"></div>
+  <!-- Navbar -->
+  <header class="ld-nav" id="ld-nav">
+    <div class="ld-nav-inner">
+      <a href="#home" class="ld-logo" aria-label="LaunchDok home">
+        <img src="image/navicon.png" alt="" width="34" height="34">
+        <span class="ld-logo-text">Launch<span>Dok</span></span>
+      </a>
+      <nav class="ld-nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="./Client.html">Work</a>
+        <a href="#process">Process</a>
+        <a href="#packages">Packages</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="ld-btn ld-btn-nav">Start Your Project</a>
+      <button class="ld-menu-toggle" id="ld-menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <!-- end cursor -->
-    <!-- start Topbar header -->
-    <header class="header-with-topbar">
-        <!-- start navigation -->
-        <nav class="navbar navbar-expand-lg header-dark bg-dark-gray responsive-sticky">
-            <div class="container-fluid">
-                <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand launchdok-logo" href="./index.html">
-                        <img src="image/LaunchDok-mark.svg" alt="" class="launchdok-logo-mark">
-                        <span>
-                            <span class="launchdok-logo-text">Launch<span class="ld-accent">Dok</span></span>
-                            <span class="launchdok-logo-tagline">Prepare · Launch · Grow</span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-auto menu-order position-static">
-                    <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-line"></span>
-                        <span class="navbar-toggler-line"></span>
-                        <span class="navbar-toggler-line"></span>
-                        <span class="navbar-toggler-line"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav fw-600">
-                            <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="#company" class="nav-link">Company</a>
-                            </li>
-                            <li class="nav-item dropdown dropdown-with-icon-style02">
-                                <a href="#services" class="nav-link">Services</a>
-                                <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li>
-                                        <a href="#services">
-                                            <i class="fa-solid fa-globe fs-16 me-2 text-base-color"></i>Websites
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#services">
-                                            <i class="fa-solid fa-robot fs-16 me-2 text-base-color"></i>AI Automation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#services">
-                                            <i class="fa-solid fa-pen-nib fs-16 me-2 text-base-color"></i>Branding
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#services">
-                                            <i class="fa-solid fa-bullhorn fs-16 me-2 text-base-color"></i>Digital Marketing
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#services">
-                                            <i class="fa-solid fa-headset fs-16 me-2 text-base-color"></i>Support
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a href="./Client.html" class="nav-link">Client</a>
-                            </li>
-                            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
-                    <div class="header-icon">
-                        <div class="header-button">
-                            <a href="#contact" class="btn btn-small btn-round-edge btn-base-color btn-box-shadow">Let's
-                                discuss</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- end navigation -->
-    </header>
-    <!-- end Topbar header -->
+  </header>
 
-    <!-- start section -->
-    <section class="p-0">
-        <div id="particles-02" data-particle="true"
-            data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#333333", "#FF6A00"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
-            class="position-absolute h-100 top-0 left-0 z-index-minus-1"></div>
-        <div class="swiper full-screen ipad-top-space-margin md-h-600px sm-h-500px swiper-number-pagination-style-02 magic-cursor light magic-cursor-vertical lg-no-parallax"
-            data-slider-options='{ "slidesPerView": 1, "direction": "horizontal", "loop": true, "parallax": true, "speed": 1000, "pagination": { "el": ".swiper-number", "clickable": true }, "autoplay": { "delay": 40000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1199": { "direction": "vertical" }}, "effect": "slide" }'
-            data-number-pagination="1">
-            <div class="swiper-wrapper">
-                <!-- start slider item -->
-                <div class="swiper-slide overflow-hidden">
-                    <div class="cover-background position-absolute top-0 start-0 w-100 h-100"
-                        data-swiper-parallax="500">
-                        <div class="opacity-light"></div>
-                        <div class="container h-100">
-                            <div class="row align-items-center h-100 justify-content-center">
-                                <div
-                                    class="col-md-10 position-relative text-dark d-flex flex-column justify-content-center h-100 text-center">
-                                    <div class="alt-font fs-110 xs-fs-80 lh-100 mb-5 xs-mb-35px ls-minus-4px xs-ls-minus-2px"
-                                        data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'>
-                                        <span class="d-inline-block">Prepare.</span>
-                                        <span class="d-inline-block fw-600 text-base-color">Launch.</span>
-                                        <span class="d-inline-block fw-600">Grow.</span>
-                                    </div>
-                                    <div
-                                        data-anime='{  "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                        <a href="#contact"
-                                            class="btn btn-base-color btn-box-shadow btn-large btn-round-edge">Start your project</a>
-                                    </div>
-                                    <div data-anime='{ "opacity": [0, 1], "duration": 500, "delay": 1000, "easing": "easeOutQuad" }'
-                                        class="fs-20 alt-font position-absolute lg-position-relative left-0px right-0px bottom-0 mb-8 lg-mt-40px lg-mb-0 sm-mt-25px w-100">
-                                        Building digital presence that <a href="#company"
-                                            class="text-decoration-line-bottom text-dark fw-500">launches businesses into the future.</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end slider item -->
-                <!-- start slider item -->
-                <div class="swiper-slide overflow-hidden">
-                    <div class="opacity-light"></div>
-                    <div class="cover-background position-absolute top-0 start-0 w-100 h-100"
-                        data-swiper-parallax="500">
-                        <div class="container h-100">
-                            <div class="row align-items-center h-100 justify-content-center">
-                                <div
-                                    class="col-md-10 position-relative text-dark d-flex flex-column justify-content-center h-100 text-center">
-                                    <div class="alt-font fs-110 xs-fs-80 lh-100 mb-5 xs-mb-35px ls-minus-4px xs-ls-minus-2px"
-                                        data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'>
-                                        <span class="d-inline-block">Modern.</span><br>
-                                        <span class="fw-600 d-inline-block text-base-color">Digital.</span>
-                                    </div>
-                                    <div
-                                        data-anime='{  "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                        <a href="./Client.html"
-                                            class="btn btn-base-color btn-box-shadow btn-large btn-round-edge">View our work</a></div>
-                                    <div data-anime='{ "opacity": [0, 1], "duration": 500, "delay": 1000, "easing": "easeOutQuad" }'
-                                        class="fs-20 alt-font position-absolute lg-position-relative left-0px right-0px bottom-0 mb-8 lg-mt-40px lg-mb-0 sm-mt-25px w-100">
-                                        Explore our <a href="./Client.html"
-                                            class="text-decoration-line-bottom text-dark fw-500">client portfolio!</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end slider item -->
-                <!-- start slider item -->
-                <div class="swiper-slide overflow-hidden">
-                    <div class="cover-background position-absolute top-0 start-0 w-100 h-100"
-                        data-swiper-parallax="500">
-                        <div class="opacity-light"></div>
-                        <div class="container h-100">
-                            <div class="row align-items-center h-100 justify-content-center">
-                                <div
-                                    class="col-md-10 position-relative text-dark d-flex flex-column justify-content-center h-100 text-center">
-                                    <div class="alt-font fs-110 xs-fs-80 lh-100 mb-5 xs-mb-35px ls-minus-4px xs-ls-minus-2px"
-                                        data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'>
-                                        <span class="d-inline-block">Smarter.</span><br>
-                                        <span class="fw-600 d-inline-block text-base-color">Solutions.</span>
-                                    </div>
-                                    <div
-                                        data-anime='{  "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                        <a href="#services"
-                                            class="btn btn-base-color btn-box-shadow btn-large btn-round-edge">Our services</a></div>
-                                    <div data-anime='{ "opacity": [0, 1], "duration": 500, "delay": 1000, "easing": "easeOutQuad" }'
-                                        class="fs-20 alt-font position-absolute lg-position-relative left-0px right-0px bottom-0 mb-8 lg-mt-40px lg-mb-0 sm-mt-25px w-100">
-                                        Websites, AI automation &amp; <a href="#services"
-                                            class="text-decoration-line-bottom text-dark fw-500">digital marketing!</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end slider item -->
-            </div>
-            <!-- start slider pagination -->
-            <div
-                class="swiper-pagination container swiper-pagination-clickable swiper-pagination-bullets-right swiper-number">
-            </div>
-            <!-- end slider pagination -->
+  <nav class="ld-mobile-menu" id="ld-mobile-menu" aria-label="Mobile navigation">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="./Client.html">Work</a>
+    <a href="#process">Process</a>
+    <a href="#packages">Packages</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="ld-btn ld-btn-primary" style="margin-top:24px;text-align:center;">Start Your Project</a>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="ld-hero" id="home">
+      <div class="ld-hero-bg" aria-hidden="true">
+        <div class="ld-horizon-wrap" id="ld-horizon-wrap">
+          <div class="ld-horizon-img"></div>
+          <div class="ld-horizon-glow"></div>
+          <div class="ld-horizon-line"></div>
         </div>
-    </section>
-    <!-- end section -->
-
-
-    <!-- start section -->
-    <section id="company" class="position-relative overflow-hidden pt-0">
-        <div id="particles-03" data-particle="true"
-            data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#333333", "#FF6A00"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
-            class="position-absolute h-100 top-0 left-0 z-index-minus-1"></div>
-        <div class="container">
-            <div class="row align-items-center mt-4 lg-mt-2 mb-50px lg-mb-0">
-                <div class="col-lg-6 position-relative md-mb-70px">
-                    <div class="w-75 overflow-hidden position-relative xs-w-80 border-radius-4px"
-                        data-anime='{ "effect": "slide", "direction": "lr", "color": "#FF6A00", "duration": 1000, "delay": 0 }'>
-                        <img class="w-100" src="./image/S1_1.png" alt="">
-                    </div>
-                    <div class="border-radius-4px position-absolute right-minus-15px md-right-15px bottom-minus-50px w-55 md-w-50 overflow-hidden"
-                        data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)"
-                        data-anime='{ "effect": "slide", "direction": "rl", "color": "#FF6A00", "duration": 1000, "delay": 500 }'>
-                        <img class="w-100" src="./image/S1_2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-5 offset-lg-1 md-mt-30px"
-                    data-anime='{ "opacity": [0, 1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutCirc" }'>
-                    <span class="fs-20 mb-15px text-base-color fw-600 d-inline-block">About LaunchDok</span>
-                    <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px mb-25px">A place to prepare, launch, and grow.</h2>
-                    <p class="w-80 lg-w-100 mb-35px sm-mb-25px">LaunchDok helps businesses build a powerful digital presence — from modern websites and AI automation to branding and digital marketing. We prepare your foundation, launch your vision, and grow your reach.</p>
-                    <div class="d-inline-block">
-                        <a href="#services" class="btn btn-medium btn-base-color btn-box-shadow me-25px btn-round-edge">Our services</a>
-                        <a href="./Client.html" class="btn btn-link btn-large text-dark-gray xs-mt-15px xs-mb-15px">View client work</a>
-                    </div>
-                </div>
-            </div>
+        <div class="ld-particles" id="ld-particles"></div>
+        <div class="ld-cta-glow"></div>
+        <div class="ld-hero-vignette"></div>
+      </div>
+      <div class="ld-hero-content ld-reveal visible">
+        <div class="ld-badge"><span class="ld-badge-dot"></span> Digital launch systems for growing businesses</div>
+        <h1>Your business deserves more than <em>just a website.</em></h1>
+        <p class="ld-hero-sub ld-hero-sub--full">LaunchDok builds premium websites, branding, AI automation, and digital systems that help businesses look trusted, work smarter, and win more customers.</p>
+        <p class="ld-hero-sub ld-hero-sub--short">Premium websites, branding &amp; AI automation — built so you look trusted and win more customers.</p>
+        <div class="ld-hero-actions">
+          <a href="#contact" class="ld-btn ld-btn-primary ld-btn-hero">Launch My Business</a>
+          <a href="./Client.html" class="ld-btn ld-btn-ghost">See Our Work</a>
         </div>
+      </div>
+      <p class="ld-trust-line" aria-hidden="true"><span>Websites · Branding · AI Automation · Domains · Emails · Ongoing Care</span></p>
     </section>
 
-    <!-- end section -->
-
-
-    <!-- start page title -->
-    <section class="p-0 page-title-center-alignment">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-xl-8 col-lg-10 text-center position-relative page-title-extra-large"
-                    data-anime='{ "el": "childs", "translateY": [-15, 0], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <h1 class="fw-700 text-dark-gray mb-20px ls-minus-2px">Services</h1>
-                    <h2 class="fw-400 ls-0px mb-0">Everything you need to launch and grow online</h2>
-                </div>
-            </div>
+    <!-- Trust / Problem -->
+    <section class="ld-section ld-section-alt" id="trust">
+      <div class="ld-container">
+        <div class="ld-section-header ld-reveal">
+          <span class="ld-label">The real problem</span>
+          <h2 class="ld-h2">Most businesses don't lose customers because their service is bad. They lose them because they don't look <em>trusted online.</em></h2>
+          <p class="ld-lead">Slow websites, messy branding, Gmail addresses, broken forms, outdated pages, and no clear customer journey quietly cost businesses opportunities every day. LaunchDok fixes the full digital foundation.</p>
         </div>
-    </section>
-    <!-- end page title -->
-    <!-- start section -->
-    <section class="p-0">
-        <div class="container">
-            <div class="row mb-6 mt-7 md-mb-50px">
-                <div class="col-xl-5 col-lg-6"
-                    data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <h3 class="text-dark-gray fw-600 ls-minus-2px w-95 xl-w-100">Create a unique digital experience</h3>
-                    <p class="w-95 md-w-100">We specialize in crafting innovative digital solutions to elevate your
-                        business. From strategy to execution, we ensure seamless integration and impactful results.</p>
-                </div>
-                <div class="col-lg-6 offset-xl-1 progress-bar-style-01 mt-50px"
-                    data-anime='{ "el": "childs", "translateY": [15, 0], "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <!-- start progress bar item -->
-                    <div class="progress mb-12 sm-mb-60px bg-extra-medium-gray">
-                        <div class="progress-bar-title d-inline-block text-dark-gray fs-17 fw-500">Content Creation
-                        </div>
-                        <div class="progress-bar bg-dark-gray" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                            aria-valuemax="100" aria-label="app-development">
-                            <span
-                                class="progress-bar-percent text-center bg-dark-gray fs-11 fw-600 lh-12 text-white">80%</span>
-                        </div>
-                    </div>
-                    <!-- end progress bar item -->
-                    <!-- start progress bar item -->
-                    <div class="progress mb-12 sm-mb-60px bg-extra-medium-gray">
-                        <div class="progress-bar-title d-inline-block text-dark-gray fs-17 fw-500">Branding</div>
-                        <div class="progress-bar bg-dark-gray" role="progressbar" aria-valuenow="87" aria-valuemin="0"
-                            aria-valuemax="100" aria-label="branding">
-                            <span
-                                class="progress-bar-percent text-center bg-dark-gray fs-11 fw-600 lh-12 text-white">87%</span>
-                        </div>
-                    </div>
-                    <!-- end progress bar item -->
-                    <!-- start progress bar item -->
-                    <div class="progress sm-mb-0 bg-extra-medium-gray">
-                        <div class="progress-bar-title d-inline-block text-dark-gray fs-17 fw-500">Web Development</div>
-                        <div class="progress-bar bg-dark-gray" role="progressbar" aria-valuenow="93" aria-valuemin="0"
-                            aria-valuemax="100" aria-label="web-development">
-                            <span
-                                class="progress-bar-percent text-center bg-dark-gray fs-11 fw-600 lh-12 text-white">93%</span>
-                        </div>
-                    </div>
-                    <!-- end progress bar item -->
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4 ld-process-steps mb-6"
-                data-anime='{ "el": "childs", "translateY": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                <div class="col">
-                    <div class="ld-process-card">
-                        <span class="ld-process-num">01</span>
-                        <i class="fas fa-comments ld-process-icon"></i>
-                        <h4>Discussion</h4>
-                        <p>Understanding your goals and challenges to set the right foundation for success.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="ld-process-card">
-                        <span class="ld-process-num">02</span>
-                        <i class="fas fa-bullseye ld-process-icon"></i>
-                        <h4>Strategy</h4>
-                        <p>Developing actionable plans tailored to your business needs.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="ld-process-card">
-                        <span class="ld-process-num">03</span>
-                        <i class="fas fa-tools ld-process-icon"></i>
-                        <h4>Execute</h4>
-                        <p>Turning strategies into action through development and testing.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="ld-process-card">
-                        <span class="ld-process-num">04</span>
-                        <i class="fas fa-rocket ld-process-icon"></i>
-                        <h4>Launch</h4>
-                        <p>Deploying your solution and ensuring it meets your expectations.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="ld-pain-grid">
+          <div class="ld-pain-card ld-reveal">
+            <div class="icon">📉</div>
+            <h3>You look outdated</h3>
+            <p>First impressions happen in seconds. An old website tells customers you're not ready for theirs.</p>
+          </div>
+          <div class="ld-pain-card ld-reveal">
+            <div class="icon">🤔</div>
+            <h3>Customers don't trust you</h3>
+            <p>No professional branding, no business email, no polish — and trust disappears before you get a chance.</p>
+          </div>
+          <div class="ld-pain-card ld-reveal">
+            <div class="icon">💨</div>
+            <h3>Leads disappear</h3>
+            <p>Broken forms, slow pages, and no WhatsApp or booking links mean interested people simply move on.</p>
+          </div>
+          <div class="ld-pain-card ld-reveal">
+            <div class="icon">😵‍💫</div>
+            <h3>Tech feels confusing</h3>
+            <p>Domains, hosting, emails, SEO — business owners shouldn't need five vendors to look professional.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- end section -->
-
-
-    <!-- start section -->
-    <section class="pb-0 half-section">
-        <div class="container">
-            <div class="row justify-content-center mb-7 sm-mb-40px">
-                <div class="col-xl-10"
-                    data-anime='{ "el": "childs", "translateY": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <!-- First Feature -->
-                    <div
-                        class="row border-bottom border-2 border-color-dark-gray pb-50px mb-50px sm-pb-35px sm-mb-35px align-items-center">
-                        <div class="col-md-1 text-center text-md-end md-mb-15px">
-                            <div class="fs-16 fw-600 text-dark-gray">01</div>
-                        </div>
-                        <div class="col-md-7 offset-lg-1 icon-with-text-style-01 md-mb-25px">
-                            <div class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
-                                <div class="feature-box-icon me-50px md-me-35px">
-                                    <i class="fas fa-pencil-ruler fa-3x text-dark-gray"></i>
-                                </div>
-                                <div class="feature-box-content">
-                                    <span class="d-inline-block text-dark-gray mb-5px fs-20 ls-minus-05px">Pixel perfect
-                                        <span class="fw-700">web design</span></span>
-                                    <p class="w-90 md-w-100">We create visually stunning and user-friendly designs that
-                                        align with your brand and resonate with your audience.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 text-center text-md-end">
-                            <a href="#" class="btn btn-large btn-expand-ltr text-light-gray btn-rounded fw-700"><span
-                                    class="bg-base-color"></span>Get started now</a>
-                        </div>
-                    </div>
-                    <!-- Second Feature -->
-                    <div
-                        class="row border-bottom border-2 border-color-dark-gray pb-50px mb-50px sm-pb-35px sm-mb-35px align-items-center">
-                        <div class="col-md-1 text-center text-md-end md-mb-15px">
-                            <div class="fs-16 fw-600 text-dark-gray">02</div>
-                        </div>
-                        <div class="col-md-7 offset-lg-1 icon-with-text-style-01 md-mb-25px">
-                            <div class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
-                                <div class="feature-box-icon me-50px md-me-35px">
-                                    <i class="fas fa-code fa-3x text-dark-gray"></i>
-                                </div>
-                                <div class="feature-box-content">
-                                    <span class="d-inline-block text-dark-gray mb-5px fs-20 ls-minus-05px">Creative
-                                        <span class="fw-700">web development</span></span>
-                                    <p class="w-90 md-w-100">Our team builds fast, secure, and scalable websites with a
-                                        focus on user experience and performance.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 text-center text-md-end">
-                            <a href="#" class="btn btn-large btn-expand-ltr text-light-gray btn-rounded fw-700"><span
-                                    class="bg-base-color"></span>Get started now</a>
-                        </div>
-                    </div>
-                    <!-- Third Feature -->
-                    <div class="row align-items-center">
-                        <div class="col-md-1 text-center text-md-end md-mb-15px">
-                            <div class="fs-16 fw-600 text-dark-gray">03</div>
-                        </div>
-                        <div class="col-md-7 offset-lg-1 icon-with-text-style-01 md-mb-25px">
-                            <div class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
-                                <div class="feature-box-icon me-50px md-me-35px">
-                                    <i class="fas fa-shopping-cart fa-3x text-dark-gray"></i>
-                                </div>
-                                <div class="feature-box-content">
-                                    <span class="d-inline-block text-dark-gray mb-5px fs-20 ls-minus-05px">Best <span
-                                            class="fw-700">eCommerce solution</span></span>
-                                    <p class="w-90 md-w-100">From product showcases to payment gateways, we deliver
-                                        customized eCommerce platforms to grow your business.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 text-center text-md-end">
-                            <a href="#" class="btn btn-large btn-expand-ltr text-light-gray btn-rounded fw-700"><span
-                                    class="bg-base-color"></span>Get started now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12 text-center align-items-center"
-                    data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <div
-                        class="bg-base-color fw-700 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px sm-m-5px d-inline-block align-middle">
-                        hurray</div>
-                    <div class="fs-18 fw-500 text-dark-gray d-inline-block align-middle">Let's make something great work
-                        together. <a href="#contact" class="text-dark-gray text-decoration-line-bottom fw-700">Got a project in
-                            mind?</a>
-                    </div>
-                </div>
-            </div>
+    <!-- What We Do -->
+    <section class="ld-section" id="services">
+      <div class="ld-container">
+        <div class="ld-section-header center ld-reveal">
+          <span class="ld-label">What we do</span>
+          <h2 class="ld-h2">Everything your business needs to launch <em>properly.</em></h2>
         </div>
+        <div class="ld-grid-3">
+          <article class="ld-card ld-reveal">
+            <div class="ld-card-icon">◈</div>
+            <h3>Premium Websites</h3>
+            <p>Fast, mobile-friendly websites designed to turn visitors into customers.</p>
+          </article>
+          <article class="ld-card ld-reveal">
+            <div class="ld-card-icon">◆</div>
+            <h3>Branding &amp; Identity</h3>
+            <p>Logos, colors, business cards, social media visuals, and a brand system people remember.</p>
+          </article>
+          <article class="ld-card ld-reveal">
+            <div class="ld-card-icon">⚡</div>
+            <h3>AI Automation</h3>
+            <p>Automate inquiries, follow-ups, FAQs, customer replies, and repetitive work.</p>
+          </article>
+          <article class="ld-card ld-reveal">
+            <div class="ld-card-icon">↗</div>
+            <h3>Digital Marketing</h3>
+            <p>Content direction, campaigns, and growth plans built around real business goals.</p>
+          </article>
+          <article class="ld-card ld-reveal">
+            <div class="ld-card-icon">⚙</div>
+            <h3>Business Setup</h3>
+            <p>Domains, hosting, business emails, forms, WhatsApp buttons, booking links, and Google setup.</p>
+          </article>
+          <article class="ld-card ld-reveal">
+            <div class="ld-card-icon">♡</div>
+            <h3>Ongoing Care</h3>
+            <p>Updates, maintenance, small edits, security, backups, and monthly improvements.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- end section -->
-
-
-    <!-- start section -->
-    <section class="bg-solitude-blue overflow-hidden position-relative mt-5 mb-0 pt-0 pb-3">
-        <div class="container-fluid">
-            <div class="row position-relative">
-                <div class="col swiper swiper-width-auto feather-shadow text-center"
-                    data-slider-options='{ "slidesPerView": "auto", "spaceBetween":40, "speed": 20000, "loop": true, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false, "reverseDirection": true }, "effect": "slide" }'>
-                    <div class="swiper-wrapper pb-30px marquee-slide">
-                        <!-- start client item -->
-                        <div class="swiper-slide">
-                            <div
-                                class="fs-130 md-fs-90 sm-fs-70 alt-font text-dark-gray fw-600 ls-minus-6px sm-ls-minus-2px word-break-normal">
-                                Provide branding solutions to grow your business <span class="ms-20px">-</span></div>
-                        </div>
-                        <!-- end client item -->
-                        <!-- start client item -->
-                        <div class="swiper-slide">
-                            <div
-                                class="fs-130 md-fs-90 sm-fs-70 alt-font text-dark-gray fw-600 ls-minus-6px sm-ls-minus-2px word-break-normal">
-                                Drive business growth with our customized branding solutions <span
-                                    class="ms-20px">-</span></div>
-                        </div>
-                        <!-- end client item -->
-                    </div>
-                </div>
-            </div>
+    <!-- Everything We Handle -->
+    <section class="ld-section ld-section-alt" id="capabilities">
+      <div class="ld-container">
+        <div class="ld-section-header center ld-reveal">
+          <span class="ld-label">Everything we handle</span>
+          <h2 class="ld-h2">If it's digital, <em>we probably do it.</em></h2>
+          <p class="ld-lead" style="margin-inline:auto;">One team. One partner. No chasing five different people.</p>
         </div>
-    </section>
-    <!-- end section -->
-
-    <!-- start section -->
-    <section class="bg-solitude-blue pt-0">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-5 offset-xl-1 col-lg-6 md-mb-50px xs-mb-30px"
-                    data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <span
-                        class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-12 lh-40 fw-700 border-radius-100px bg-white d-inline-flex box-shadow-medium-bottom"><i
-                            class="bi bi-award fs-16 me-5px"></i>Innovative Solutions</span>
-                    <h3 class="text-dark-gray fw-700 ls-minus-1px md-w-80 sm-w-100">Empowering Businesses with Smart
-                        Strategies</h3>
-                    <div class="mb-40px sm-mb-30px">
-                        <!-- start features box item -->
-                        <div class="icon-with-text-style-08 mb-25px">
-                            <div class="feature-box feature-box-left-icon-middle">
-                                <div
-                                    class="feature-box-icon feature-box-icon-rounded w-50px h-50px rounded-circle bg-white box-shadow-medium-bottom me-20px text-center">
-                                    <i class="fa-solid fa-check fs-16 text-dark-gray"></i></div>
-                                <div class="feature-box-content last-paragraph-no-margin">
-                                    <span class="fs-17 fw-600 text-dark-gray">Enhance Brand Visibility</span>
-                                    <p>We help your business stand out with creative and impactful digital strategies.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end features box item -->
-                        <!-- start features box item -->
-                        <div class="icon-with-text-style-08">
-                            <div class="feature-box feature-box-left-icon-middle">
-                                <div
-                                    class="feature-box-icon feature-box-icon-rounded w-50px h-50px rounded-circle bg-white box-shadow-medium-bottom me-20px text-center">
-                                    <i class="fa-solid fa-check fs-16 text-dark-gray"></i></div>
-                                <div class="feature-box-content last-paragraph-no-margin">
-                                    <span class="fs-17 fw-600 text-dark-gray">Boost Revenue Growth</span>
-                                    <p>Our tailored solutions are designed to increase your conversion rates and ROI.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end features box item -->
-                    </div>
-                    <a href="#services"
-                        class="btn btn-extra-large btn-base-color btn-hover-animation-switch btn-round-edge btn-box-shadow btn-icon-left me-25px text-transform-none">
-                        <span>
-                            <span class="btn-text ">Explore Services</span>
-                            <span class="btn-icon"><i class="feather icon-feather-briefcase"></i></span>
-                        </span>
-                    </a>
-                    <a href="#contact"
-                        class="btn btn-link btn-hover-animation-switch btn-extra-large text-dark-gray btn-icon-left align-middle fw-600 p-0 xs-mt-20px xs-mb-20px text-transform-none">
-                        <span>
-                            <span class="btn-text">Contact Us</span>
-                            <span class="btn-icon"><i class="feather icon-feather-mail"></i></span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row row-cols-1 row-cols-lg-1 row-cols-xl-1 justify-content-center mx-0">
-                        <!-- start features box item -->
-                        <div class="col transition-inner-all icon-with-text-style-06 mb-30px"
-                            data-bottom-top="transform: translate3d(40px, 0px, 0px);"
-                            data-top-bottom="transform: translate3d(-40px, 0px, 0px);">
-                            <div
-                                class="bg-white border-radius-8px feature-box box-shadow-extra-large feature-box-left-icon p-10 overflow-hidden">
-                                <div class="feature-box-icon">
-                                    <i class="line-icon-Gear icon-double-large text-base-color"></i>
-                                </div>
-                                <div class="feature-box-content last-paragraph-no-margin">
-                                    <div class="fs-18 fw-600 text-dark-gray mb-5px">Comprehensive Solutions</div>
-                                    <p>We provide robust tools and resources to address your unique business challenges.
-                                    </p>
-                                </div>
-                                <span class="border-hover bg-base-color"></span>
-                            </div>
-                        </div>
-                        <!-- end features box item -->
-                        <!-- start features box item -->
-                        <div class="col transition-inner-all icon-with-text-style-06"
-                            data-bottom-top="transform: translate3d(-40px, 0px, 0px);"
-                            data-top-bottom="transform: translate3d(40px, 0px, 0px);">
-                            <div
-                                class="bg-white border-radius-8px feature-box box-shadow-extra-large feature-box-left-icon p-10 overflow-hidden">
-                                <div class="feature-box-icon">
-                                    <i class="line-icon-Navigation-LeftWindow icon-double-large text-base-color"></i>
-                                </div>
-                                <div class="feature-box-content last-paragraph-no-margin">
-                                    <div class="fs-18 fw-600 text-dark-gray mb-5px">Flexible Layouts</div>
-                                    <p>Customize your experience with unlimited design and functionality options.</p>
-                                </div>
-                                <span class="border-hover bg-base-color"></span>
-                            </div>
-                        </div>
-                        <!-- end features box item -->
-                    </div>
-                </div>
-            </div>
+        <div class="ld-cap-grid ld-reveal">
+          <div class="ld-cap">Website Design</div>
+          <div class="ld-cap">Website Redesign</div>
+          <div class="ld-cap">Landing Pages</div>
+          <div class="ld-cap">Logo Design</div>
+          <div class="ld-cap">Brand Identity</div>
+          <div class="ld-cap">Business Cards</div>
+          <div class="ld-cap">Social Media Kits</div>
+          <div class="ld-cap">Domain Setup</div>
+          <div class="ld-cap">Hosting</div>
+          <div class="ld-cap">Business Emails</div>
+          <div class="ld-cap">Google Business Profile</div>
+          <div class="ld-cap">WhatsApp Integration</div>
+          <div class="ld-cap">Booking Systems</div>
+          <div class="ld-cap">Contact Forms</div>
+          <div class="ld-cap">SEO Foundations</div>
+          <div class="ld-cap">Analytics Setup</div>
+          <div class="ld-cap">AI Chatbots</div>
+          <div class="ld-cap">AI Workflow Automation</div>
+          <div class="ld-cap">Maintenance</div>
+          <div class="ld-cap">Security &amp; Backups</div>
+          <div class="ld-cap">Monthly Updates</div>
         </div>
-    </section>
-    <!-- end section -->
-
-    <!-- start section -->
-    <section id="services" class="pt-0 bg-solitude-blue background-position-center-top big-section"
-        style="background-image: url(images/vertical-line-bg-small.svg)">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center"
-                data-anime='{"el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,0.7], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-07 transition-inner-all mb-30px">
-                    <div
-                        class="hover-box dark-hover feature-box p-55px lg-p-30px overflow-hidden bg-dark-slate-blue text-start box-shadow-double-large-hover">
-                        <div class="feature-box-icon min-h-150px sm-min-h-100px mb-20 z-index-9">
-                            <i class="line-icon-Management icon-extra-large text-white"></i>
-                        </div>
-                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">websites</div>
-                        <div class="feature-box-content last-paragraph-no-margin">
-                            <span class="d-inline-block text-white mb-5px fs-18">Websites</span>
-                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">Modern. Fast. Scalable. We design and build high-performance websites tailored to your business goals.</p>
-                        </div>
-                        <div class="feature-box-overlay bg-base-color"></div>
-                    </div>
-                </div>
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-07 transition-inner-all mb-30px">
-                    <div
-                        class="hover-box dark-hover feature-box p-55px lg-p-30px overflow-hidden bg-dark-slate-blue text-start box-shadow-double-large-hover">
-                        <div class="feature-box-icon min-h-150px sm-min-h-100px mb-20 z-index-9">
-                            <i class="line-icon-Megaphone icon-extra-large text-white"></i>
-                        </div>
-                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">automation</div>
-                        <div class="feature-box-content last-paragraph-no-margin">
-                            <span class="d-inline-block text-white mb-5px fs-18">AI Automation</span>
-                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">Smarter. Faster. Better. Intelligent workflows that save time and reduce errors across your operations.</p>
-                        </div>
-                        <div class="feature-box-overlay bg-base-color"></div>
-                    </div>
-                </div>
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-07 transition-inner-all mb-30px">
-                    <div
-                        class="hover-box dark-hover feature-box p-55px lg-p-30px overflow-hidden bg-dark-slate-blue text-start box-shadow-double-large-hover">
-                        <div class="feature-box-icon min-h-150px sm-min-h-100px mb-20 z-index-9">
-                            <i class="line-icon-Add-Bag icon-extra-large text-white"></i>
-                        </div>
-                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">branding</div>
-                        <div class="feature-box-content last-paragraph-no-margin">
-                            <span class="d-inline-block text-white mb-5px fs-18">Branding</span>
-                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">Memorable. Powerful. Identity systems and visual design that make your business stand out.</p>
-                        </div>
-                        <div class="feature-box-overlay bg-base-color"></div>
-                    </div>
-                </div>
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-07 transition-inner-all sm-mb-30px">
-                    <div
-                        class="hover-box dark-hover feature-box p-55px lg-p-30px overflow-hidden bg-dark-slate-blue text-start box-shadow-double-large-hover">
-                        <div class="feature-box-icon min-h-150px sm-min-h-100px mb-20 z-index-9">
-                            <i class="line-icon-Gears icon-extra-large text-white"></i>
-                        </div>
-                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">marketing</div>
-                        <div class="feature-box-content last-paragraph-no-margin">
-                            <span class="d-inline-block text-white mb-5px fs-18">Digital Marketing</span>
-                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">Reach. Engage. Grow. Campaigns and strategies that connect you with the right audience.</p>
-                        </div>
-                        <div class="feature-box-overlay bg-base-color"></div>
-                    </div>
-                </div>
-
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-07 transition-inner-all sm-mb-30px">
-                    <div
-                        class="hover-box dark-hover feature-box p-55px lg-p-30px overflow-hidden bg-dark-slate-blue text-start box-shadow-double-large-hover">
-                        <div class="feature-box-icon min-h-150px sm-min-h-100px mb-20 z-index-9">
-                            <i class="line-icon-Gears icon-extra-large text-white"></i>
-                        </div>
-                        <div class="feature-box-title fs-200 fw-600 text-black opacity-2 ls-minus-10px">support</div>
-                        <div class="feature-box-content last-paragraph-no-margin">
-                            <span class="d-inline-block text-white mb-5px fs-18">Support</span>
-                            <p class="w-90 xl-w-100 lh-30 text-light-opacity">Always. Everywhere. Ongoing maintenance and dedicated support to keep your digital presence running smoothly.</p>
-                        </div>
-                        <div class="feature-box-overlay bg-base-color"></div>
-                    </div>
-                </div>
-
-                <!-- end features box item -->
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- end section -->
-
-    <!-- start section -->
-    <section class="bg-solitude-blue md-pb-40px xs-pb-25px pb-0 pt-5">
-        <div class="container-fluid overlap-section">
-            <div class="row position-relative mb-4 md-mb-5">
-                <div class="col swiper swiper-width-auto text-center pt-5 pb-10px md-pb-20px"
-                    data-slider-options='{ "slidesPerView": "auto", "spaceBetween":40, "speed": 10000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
-                    <div class="swiper-wrapper marquee-slide">
-                        <!-- start client item -->
-                        <div class="swiper-slide">
-                            <div class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 text-dark-gray fw-600 ls-minus-5px">
-                                prepare</div>
-                        </div>
-                        <!-- end client item -->
-                        <!-- start client item -->
-                        <div class="swiper-slide">
-                            <div
-                                class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 fw-600 text-outline text-outline-color-extra-medium-gray ls-minus-5px">
-                                launch</div>
-                        </div>
-                        <!-- end client item -->
-                        <!-- start client item -->
-                        <div class="swiper-slide">
-                            <div class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 text-dark-gray fw-600 ls-minus-5px">grow
-                            </div>
-                        </div>
-                        <!-- end client item -->
-                        <!-- start client item -->
-                        <div class="swiper-slide">
-                            <div
-                                class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 fw-600 text-outline text-outline-color-extra-medium-gray ls-minus-5px">
-                                websites</div>
-                        </div>
-                        <!-- end client item -->
-                        <!-- start client item -->
-                        <div class="swiper-slide">
-                            <div class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 text-dark-gray fw-600 ls-minus-5px">branding
-                            </div>
-                        </div>
-                        <!-- end client item -->
-                        <!-- start client item -->
-                        <div class="swiper-slide">
-                            <div
-                                class="fs-150 lg-fs-130 md-fs-110 sm-fs-90 fw-600 text-outline text-outline-color-extra-medium-gray ls-minus-5px">
-                                automation</div>
-                        </div>
-                        <!-- end client item -->
-                    </div>
-                </div>
-            </div>
+    <!-- Process -->
+    <section class="ld-section" id="process">
+      <div class="ld-container">
+        <div class="ld-section-header ld-reveal">
+          <span class="ld-label">Process</span>
+          <h2 class="ld-h2">From idea to launch <em>without the confusion.</em></h2>
         </div>
-    </section>
-    <!-- end section -->
-
-    <!-- start portfolio section -->
-    <section id="portfolio" class="bg-solitude-blue pt-0 pb-5">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-7 text-center"
-                    data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-12 lh-40 fw-700 border-radius-100px bg-white d-inline-flex box-shadow-medium-bottom">Our Work</span>
-                    <h3 class="text-dark-gray fw-700 ls-minus-1px">Featured Client Projects</h3>
-                    <p class="w-80 mx-auto">From digital marketing campaigns to full website builds — see how we help businesses grow online.</p>
-                </div>
+        <div class="ld-process-list">
+          <div class="ld-process-item ld-reveal">
+            <div class="ld-process-num">01</div>
+            <div>
+              <h3>Discover</h3>
+              <p>We understand your business, goals, customers, and what needs to be fixed.</p>
             </div>
-            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 justify-content-center"
-                data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                <div class="col mb-30px">
-                    <a href="./Client/Myhomes-Digital.html" class="d-block border-radius-6px overflow-hidden box-shadow-quadruple-large-hover">
-                        <div class="position-relative">
-                            <img src="image/C1.png" alt="My Homes" class="w-100">
-                            <span class="position-absolute bottom-15px left-15px text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Digital</span>
-                        </div>
-                        <div class="bg-white p-20px">
-                            <span class="d-block alt-font fw-600 text-dark-gray fs-18">My Homes</span>
-                            <span class="fs-14 text-medium-gray">Retail · Digital Marketing</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col mb-30px">
-                    <a href="./Client/Pioneers-Web.html" class="d-block border-radius-6px overflow-hidden box-shadow-quadruple-large-hover">
-                        <div class="position-relative">
-                            <img src="image/PC1.png" alt="Pioneers Cleaning" class="w-100">
-                            <span class="position-absolute bottom-15px left-15px text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Website</span>
-                        </div>
-                        <div class="bg-white p-20px">
-                            <span class="d-block alt-font fw-600 text-dark-gray fs-18">Pioneers Cleaning</span>
-                            <span class="fs-14 text-medium-gray">Cleaning · Web Development</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col mb-30px">
-                    <a href="./Client/SuperCleaningLanka-Web.html" class="d-block border-radius-6px overflow-hidden box-shadow-quadruple-large-hover">
-                        <div class="position-relative">
-                            <img src="image/PC2.png" alt="Super Cleaning Lanka" class="w-100">
-                            <span class="position-absolute bottom-15px left-15px text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Website</span>
-                        </div>
-                        <div class="bg-white p-20px">
-                            <span class="d-block alt-font fw-600 text-dark-gray fs-18">Super Cleaning Lanka</span>
-                            <span class="fs-14 text-medium-gray">Cleaning · Web Development</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col mb-30px">
-                    <a href="./Client/SmileDental-Web.html" class="d-block border-radius-6px overflow-hidden box-shadow-quadruple-large-hover">
-                        <div class="position-relative">
-                            <img src="image/SD1.png" alt="Smile Dental" class="w-100">
-                            <span class="position-absolute bottom-15px left-15px text-uppercase pt-5px pb-5px fw-500 ps-15px pe-15px bg-white text-dark-gray fs-12 lh-20 border-radius-2px">Website</span>
-                        </div>
-                        <div class="bg-white p-20px">
-                            <span class="d-block alt-font fw-600 text-dark-gray fs-18">Smile Dental</span>
-                            <span class="fs-14 text-medium-gray">Healthcare · Web Development</span>
-                        </div>
-                    </a>
-                </div>
+          </div>
+          <div class="ld-process-item ld-reveal">
+            <div class="ld-process-num">02</div>
+            <div>
+              <h3>Design</h3>
+              <p>We create the look, structure, content, and experience your customers will trust.</p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-auto text-center">
-                    <a href="./Client.html" class="btn btn-large btn-dark-gray btn-round-edge btn-box-shadow">View All Projects</a>
-                </div>
+          </div>
+          <div class="ld-process-item ld-reveal">
+            <div class="ld-process-num">03</div>
+            <div>
+              <h3>Build</h3>
+              <p>We set up your website, brand assets, business email, forms, automation, and tech foundation.</p>
             </div>
+          </div>
+          <div class="ld-process-item ld-reveal">
+            <div class="ld-process-num">04</div>
+            <div>
+              <h3>Launch</h3>
+              <p>We test, polish, connect everything, and help you go live professionally.</p>
+            </div>
+          </div>
+          <div class="ld-process-item ld-reveal">
+            <div class="ld-process-num">05</div>
+            <div>
+              <h3>Grow</h3>
+              <p>We support updates, improvements, marketing, and future digital expansion.</p>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- end portfolio section -->
-
-    <section id="contact" class="mt-0 mb-1 pt-0 pb-2 overflow-hidden bg-solitude-blue">
-        <div class="container">
-            <div class="border-radius-6px p-8 md-p-6 sm-p-10 position-relative overflow-hidden">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center"
-                        data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <h2 class="text-dark-gray fw-600 ls-minus-1px z-index-1 position-relative">How can we help you
-                        </h2>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-4 justify-content-center"
-                    data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                </div>
-                <div class="position-absolute top-5px ls-minus-6px left-0px w-100 text-center"
-                    data-bottom-top="transform: translate3d(380px, 0px, 0px);"
-                    data-top-bottom="transform: translate3d(-380px, 0px, 0px);">
-                    <div class="fs-200 md-fs-170 xs-fs-110 fw-700 opacity-1">Contact us</div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row row-cols-md-1 justify-content-center mb-5 sm-mb-0"
-                data-anime='{ "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                <div class="col-xl-9 col-lg-10 col-md-12">
-                    <form action="email-templates/contact-form.php" method="post" class="contact-form-style-03">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="exampleInputEmail1"
-                                    class="form-label fs-13 text-uppercase text-dark-gray fw-600 mb-0">Your good
-                                    name*</label>
-                                <div class="position-relative form-group mb-25px">
-                                    <span class="form-icon"><i class="bi bi-emoji-smile text-dark-gray"></i></span>
-                                    <input
-                                        class="fs-16 ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control required"
-                                        id="exampleInputEmail1" type="text" name="name"
-                                        placeholder="What's your good name?" />
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="exampleInputEmail1"
-                                    class="form-label fs-13 text-uppercase text-dark-gray fw-600 mb-0">Your email
-                                    address*</label>
-                                <div class="position-relative form-group mb-25px">
-                                    <span class="form-icon"><i class="bi bi-envelope text-dark-gray"></i></span>
-                                    <input
-                                        class="fs-16 ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control required"
-                                        id="exampleInputEmail2" type="email" name="email"
-                                        placeholder="Enter your email address" />
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="exampleInputEmail1"
-                                    class="form-label fs-13 text-uppercase text-dark-gray fw-600 mb-0">Your phone
-                                    number*</label>
-                                <div class="position-relative form-group mb-25px">
-                                    <span class="form-icon"><i class="bi bi-telephone text-dark-gray"></i></span>
-                                    <input
-                                        class="fs-16 ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control required"
-                                        id="exampleInputEmail3" type="tel" name="phone"
-                                        placeholder="Enter your phone number" />
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="exampleInputEmail1"
-                                    class="form-label fs-13 text-uppercase text-dark-gray fw-600 mb-0">Your
-                                    subject</label>
-                                <div class="position-relative form-group mb-25px">
-                                    <span class="form-icon"><i class="bi bi-journals text-dark-gray"></i></span>
-                                    <input
-                                        class="fs-16 ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control"
-                                        id="exampleInputEmail4" type="text" name="subject"
-                                        placeholder="How can we help you?" />
-                                </div>
-                            </div>
-                            <div class="col-12 mb-35px">
-                                <label for="exampleInputEmail1"
-                                    class="form-label fs-13 text-uppercase text-dark-gray fw-600 mb-0">Your
-                                    message</label>
-                                <div class="position-relative form-group form-textarea mb-0">
-                                    <textarea
-                                        class="fs-16 ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control"
-                                        name="comment" placeholder="Describe about your message" rows="4"></textarea>
-                                    <span class="form-icon"><i class="bi bi-chat-square-dots text-dark-gray"></i></span>
-                                </div>
-                            </div>
-                            <div class="col-md-8 sm-mb-30px text-center text-md-start">
-                                <p class="mb-0 fs-15 lh-26 w-80 md-w-85 sm-w-100">We are committed to protecting your
-                                    privacy. We will never collect information about you without your explicit consent.
-                                </p>
-                            </div>
-                            <div class="col-md-4 text-center text-md-end mt-5px">
-                                <input id="exampleInputEmail5" type="hidden" name="redirect" value="">
-                                <button
-                                    class="btn btn-medium btn-dark-gray btn-box-shadow btn-switch-text left-icon submit"
-                                    type="submit">
-                                    <span>
-                                        <span><i class="fa-regular fa-paper-plane"></i></span>
-                                        <span class="btn-double-text" data-text="Send message">Send message</span>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="col-12 text-center">
-                                <div class="form-results mt-20px d-none"></div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <div class="pt-1 pb-0 bg-solitude-blue row align-items-center justify-content-center mt-1 mb-1 py-4">
-
-        <div class="col-md-auto text-center text-md-end sm-mb-20px">
-            <h6 class="text-dark-gray fw-600 mb-0 ls-minus-1px">Connect with social media</h6>
+    <!-- Packages -->
+    <section class="ld-section ld-section-alt" id="packages">
+      <div class="ld-container">
+        <div class="ld-section-header center ld-reveal">
+          <span class="ld-label">Packages</span>
+          <h2 class="ld-h2">Choose how you want to <em>launch.</em></h2>
         </div>
-        <div class="col-2 d-none d-lg-inline-block">
-            <span class="w-100 h-1px bg-dark-gray opacity-2 d-flex mx-auto"></span>
-        </div>
-        <!-- start social icon -->
-        <div class="col-md-auto elements-social social-icon-style-04 text-center text-md-start ps-lg-0">
-            <ul class="large-icon dark">
-                <li class="m-0"><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
-                            class="fa-brands fa-facebook-f"></i><span></span></a></li>
-                <li class="m-0"><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i
-                            class="fa-brands fa-dribbble"></i><span></span></a></li>
-                <li class="m-0"><a class="twitter" href="http://www.twitter.com" target="_blank"><i
-                            class="fa-brands fa-twitter"></i><span></span></a></li>
-                <li class="m-0"><a class="instagram" href="http://www.instagram.com" target="_blank"><i
-                            class="fa-brands fa-instagram"></i><span></span></a></li>
+        <div class="ld-packages">
+          <div class="ld-package ld-reveal">
+            <div class="ld-package-tag">Launch</div>
+            <h3>Essentials</h3>
+            <p class="desc">For businesses that need a clean, professional online presence.</p>
+            <ul>
+              <li>Premium website</li>
+              <li>Mobile optimization</li>
+              <li>Contact form</li>
+              <li>WhatsApp button</li>
+              <li>Basic SEO</li>
+              <li>Domain &amp; email guidance</li>
             </ul>
+            <a href="#contact" class="ld-btn ld-btn-ghost" style="width:100%;">Get Started</a>
+          </div>
+          <div class="ld-package featured ld-reveal">
+            <div class="ld-package-tag">Most Popular</div>
+            <h3>Growth</h3>
+            <p class="desc">For businesses ready to attract more customers and look premium.</p>
+            <ul>
+              <li>Everything in Essentials</li>
+              <li>Brand identity</li>
+              <li>Social media starter kit</li>
+              <li>Google Business setup</li>
+              <li>Booking link integration</li>
+              <li>Content direction</li>
+            </ul>
+            <a href="#contact" class="ld-btn ld-btn-primary" style="width:100%;">Get Started</a>
+          </div>
+          <div class="ld-package ld-reveal">
+            <div class="ld-package-tag">Full Service</div>
+            <h3>Complete LaunchDok</h3>
+            <p class="desc">For businesses that want the full digital foundation handled.</p>
+            <ul>
+              <li>Everything in Growth</li>
+              <li>AI automation</li>
+              <li>Business email setup</li>
+              <li>Landing pages</li>
+              <li>Maintenance plan</li>
+              <li>Monthly improvements</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#contact" class="ld-btn ld-btn-ghost" style="width:100%;">Get Started</a>
+          </div>
         </div>
-        <!-- end social icon -->
-    </div>
+        <p class="ld-reveal" style="text-align:center;margin-top:32px;color:var(--ld-gray);font-size:16px;">Not sure what you need? <a href="#contact" style="color:var(--ld-orange);font-weight:600;">Let's talk.</a></p>
+      </div>
+    </section>
 
-    <!-- start footer -->
-    <footer class="bg-solitude-blue p-0 position-relative">
-        <div id="particles-04" class="position-absolute h-100 top-0 left-0 z-index-minus-1 w-100" data-particle="true"
-            data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#333333", "#FF6A00"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'>
+    <!-- Work / Portfolio -->
+    <section class="ld-section" id="work">
+      <div class="ld-container">
+        <div class="ld-section-header center ld-reveal">
+          <span class="ld-label">Work</span>
+          <h2 class="ld-h2">Imagine your business <em>looking like this.</em></h2>
+          <p class="ld-lead" style="margin-inline:auto;">Concept builds and client projects across industries — designed to make your business look serious from day one.</p>
         </div>
-        <div class="container">
-            <div class="row justify-content-center pt-3 sm-pt-50px">
-                <!-- start footer column -->
-                <div class="col-7 col-lg-3 col-md-12 col-sm-6 text-md-center text-lg-start md-mb-30px">
-                    <a href="./index.html" class="footer-logo launchdok-logo mb-15px md-mb-20px d-inline-block">
-                        <img src="image/LaunchDok-mark.svg" alt="" class="launchdok-logo-mark">
-                        <span class="launchdok-logo-text">Launch<span class="ld-accent">Dok</span></span>
-                    </a>
-                    <p class="mb-20px">Building digital presence that launches businesses into the future. Prepare · Launch · Grow.</p>
-                </div>
-                <!-- end footer column -->
-                <!-- start footer column -->
-                <div class="col-5 col-lg-2 offset-xl-1 col-md-3 col-sm-6 md-mb-30px">
-                    <span class="alt-font d-block text-dark-gray fw-600 mb-10px fs-19">Company</span>
-                    <ul>
-                        <li><a href="#company">Company</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="./Client.html">Client</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- end footer column -->
-                <!-- start footer column -->
-                <div class="col-lg-3 col-md-4 col-sm-6 xs-mb-30px">
-                    <span class="alt-font d-block text-dark-gray fw-600 mb-10px fs-19">Get in touch</span>
-                    <p class="m-0 fs-16"><span class="fw-600"><i
-                                class="feather icon-feather-phone-call text-dark-gray icon-small me-10px"></i></span><a
-                            href="tel:9760246417"> 071 167 0179</a></p>
-                    <p class="m-0 fs-16"><span class="fw-600"><i
-                                class="feather icon-feather-phone-call text-dark-gray icon-small me-10px"></i></span><a
-                            href="tel:9760246417"> 077 730 7129</a></p>
-                    <p class="m-0 fs-16"><span class="fw-600"><i
-                                class="feather icon-feather-mail text-dark-gray icon-small me-10px"></i></span><a
-                            href="mailto:hello@launchdok.com">hello@launchdok.com</a></p>
-                </div>
-                <!-- end footer column -->
-                <!-- start footer column -->
-                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
-                    <span class="alt-font d-block text-dark-gray fw-600 mb-10px fs-19">Newsletter</span>
-                    <p class="sm-mb-20px">Subscribe our newsletter to get the latest news and updates.</p>
-                    <div class="d-inline-block w-100 newsletter-style-02 position-relative">
-                        <form action="email-templates/subscribe-newsletter.php" method="post"
-                            class="position-relative w-100">
-                            <input class="bg-transparent border-color-extra-medium-gray w-100 form-control required"
-                                type="email" name="email" placeholder="Enter email address...">
-                            <input type="hidden" name="redirect" value="">
-                            <button class="btn submit" aria-label="submit"><i
-                                    class="icon feather icon-feather-mail icon-small text-base-color"></i></button>
-                            <div
-                                class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- end footer column -->
+        <div class="ld-portfolio-grid">
+          <a href="./Client/SmileDental-Web.html" class="ld-portfolio-card ld-reveal">
+            <div class="ld-portfolio-thumb">
+              <img src="image/SD1.png" alt="Dental clinic website concept">
+              <span class="ld-portfolio-badge">Concept Build</span>
             </div>
-            <div class="row justify-content-center align-items-center">
-                <!-- start divider -->
-                <div class="col-12 pt-2 ">
-                    <div class="divider-style-03 divider-style-03-01 border-color-extra-medium-gray"></div>
-                </div>
-                <!-- end divider -->
-                <!-- start copyright -->
-                <div
-                    class="col-lg-6 pt-25px pb-25px md-pt-0 fs-16 last-paragraph-no-margin order-2 order-lg-1 text-center ">
-                    <p>&copy; 2026 All rights reserved by LaunchDok</p>
-                </div>
-                <!-- end copyright -->
+            <div class="ld-portfolio-body">
+              <div class="type">Dental Clinic</div>
+              <h3>Smile Dental Hospitals</h3>
+              <p>Premium clinic site with services, doctor profiles, and appointment flow — built to earn patient trust instantly.</p>
             </div>
+          </a>
+          <a href="./Client/Pioneers-Web.html" class="ld-portfolio-card ld-reveal">
+            <div class="ld-portfolio-thumb">
+              <img src="image/PC1.png" alt="Cleaning company website">
+              <span class="ld-portfolio-badge">Client Project</span>
+            </div>
+            <div class="ld-portfolio-body">
+              <div class="type">Cleaning Company</div>
+              <h3>Pioneers Cleaning</h3>
+              <p>Service-focused website with clear CTAs, trust signals, and mobile-first design for local lead generation.</p>
+            </div>
+          </a>
+          <article class="ld-portfolio-card ld-reveal">
+            <div class="ld-portfolio-thumb" style="background:linear-gradient(135deg,#1a0a00,#0d0d0d);display:flex;align-items:center;justify-content:center;font-size:48px;">
+              ✂️
+              <span class="ld-portfolio-badge">Concept Build</span>
+            </div>
+            <div class="ld-portfolio-body">
+              <div class="type">Salon &amp; Beauty</div>
+              <h3>Glow Studio</h3>
+              <p>Booking integration, service menu, Instagram-ready visuals — designed so clients book before they even call.</p>
+            </div>
+          </article>
+          <article class="ld-portfolio-card ld-reveal">
+            <div class="ld-portfolio-thumb" style="background:linear-gradient(135deg,#001a0d,#0d0d0d);display:flex;align-items:center;justify-content:center;font-size:48px;">
+              🍽️
+              <span class="ld-portfolio-badge">Concept Build</span>
+            </div>
+            <div class="ld-portfolio-body">
+              <div class="type">Restaurant</div>
+              <h3>Urban Bite</h3>
+              <p>Menu showcase, reservation links, location maps, and social proof — turning hungry browsers into seated customers.</p>
+            </div>
+          </article>
+          <article class="ld-portfolio-card ld-reveal">
+            <div class="ld-portfolio-thumb" style="background:linear-gradient(135deg,#001020,#0d0d0d);display:flex;align-items:center;justify-content:center;font-size:48px;">
+              🏠
+              <span class="ld-portfolio-badge">Concept Build</span>
+            </div>
+            <div class="ld-portfolio-body">
+              <div class="type">Real Estate</div>
+              <h3>Prime Properties</h3>
+              <p>Property listings, agent profiles, inquiry forms — a digital presence that matches the value of what you sell.</p>
+            </div>
+          </article>
+          <a href="./Client/Myhomes-Digital.html" class="ld-portfolio-card ld-reveal">
+            <div class="ld-portfolio-thumb">
+              <img src="image/C1.png" alt="Retail digital marketing">
+              <span class="ld-portfolio-badge">Client Project</span>
+            </div>
+            <div class="ld-portfolio-body">
+              <div class="type">Retail Store</div>
+              <h3>My Homes</h3>
+              <p>Digital marketing and brand presence for retail — driving foot traffic and online engagement together.</p>
+            </div>
+          </a>
         </div>
-    </footer>
-    <!-- end footer -->
-    <!-- start sticky -->
-    <div class="sticky-wrap d-none d-lg-inline-block p-1" data-animation-delay="100" data-shadow-animation="true">
-        <span class="fs-16 text-white"><i class="bi bi-envelope icon-small me-10px"></i>Get our service — <a
-                href="mailto:hello@launchdok.com" class="text-white text-decoration-line-bottom fw-500">Send a message</a></span>
+        <div style="text-align:center;margin-top:40px;" class="ld-reveal">
+          <a href="./Client.html" class="ld-btn ld-btn-ghost">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why LaunchDok -->
+    <section class="ld-section ld-section-alt" id="why">
+      <div class="ld-container">
+        <div class="ld-why-grid">
+          <div class="ld-reveal">
+            <span class="ld-label">Why LaunchDok</span>
+            <h2 class="ld-h2">Built for business owners who don't want to chase <em>five different people.</em></h2>
+            <p class="ld-lead">We sell peace of mind — not just services. Your website, branding, emails, hosting, automation, and updates handled by one team that actually understands small business.</p>
+          </div>
+          <ul class="ld-check-list ld-reveal">
+            <li>One team for website, branding, tech, and growth</li>
+            <li>Premium design without agency confusion</li>
+            <li>Business-focused copy and structure</li>
+            <li>AI and automation where it actually helps</li>
+            <li>Ongoing support after launch</li>
+            <li>Built to make your business look serious</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="ld-section" id="faq">
+      <div class="ld-container" style="max-width:760px;">
+        <div class="ld-section-header center ld-reveal">
+          <span class="ld-label">FAQ</span>
+          <h2 class="ld-h2">Questions business owners <em>always ask.</em></h2>
+        </div>
+        <div class="ld-reveal">
+          <div class="ld-faq-item open">
+            <button class="ld-faq-q" type="button">How long does a website take?<span class="icon">+</span></button>
+            <div class="ld-faq-a"><p>Most websites take 2–4 weeks. Branding adds 1–2 weeks. Complete LaunchDok setups with automation and email typically take 4–6 weeks. We give you a clear timeline before starting.</p></div>
+          </div>
+          <div class="ld-faq-item">
+            <button class="ld-faq-q" type="button">Do I own my website?<span class="icon">+</span></button>
+            <div class="ld-faq-a"><p>Yes — 100%. Your website, brand assets, and content belong to you. No lock-in, no hidden clauses.</p></div>
+          </div>
+          <div class="ld-faq-item">
+            <button class="ld-faq-q" type="button">Can you redesign my existing website?<span class="icon">+</span></button>
+            <div class="ld-faq-a"><p>Absolutely. We audit what you have, keep what works, and rebuild what doesn't — without losing your content or SEO where possible.</p></div>
+          </div>
+          <div class="ld-faq-item">
+            <button class="ld-faq-q" type="button">Can you set up domain and business email?<span class="icon">+</span></button>
+            <div class="ld-faq-a"><p>Yes. Domain registration, hosting, and professional business emails (you@yourbusiness.com) are part of our Business Setup and Complete packages.</p></div>
+          </div>
+          <div class="ld-faq-item">
+            <button class="ld-faq-q" type="button">Can you add WhatsApp or booking?<span class="icon">+</span></button>
+            <div class="ld-faq-a"><p>Yes — WhatsApp buttons, contact forms, online booking links, and calendar integrations are standard in our builds.</p></div>
+          </div>
+          <div class="ld-faq-item">
+            <button class="ld-faq-q" type="button">Do you offer monthly support?<span class="icon">+</span></button>
+            <div class="ld-faq-a"><p>Yes. Our Ongoing Care plans cover updates, security, backups, small edits, and monthly improvements so you're never left on your own.</p></div>
+          </div>
+          <div class="ld-faq-item">
+            <button class="ld-faq-q" type="button">Can I pay in parts?<span class="icon">+</span></button>
+            <div class="ld-faq-a"><p>Yes. We offer milestone-based payment plans — typically split across project phases so you're never paying for work that hasn't started.</p></div>
+          </div>
+          <div class="ld-faq-item">
+            <button class="ld-faq-q" type="button">What type of businesses do you work with?<span class="icon">+</span></button>
+            <div class="ld-faq-a"><p>Salons, clinics, restaurants, cleaning companies, retail stores, real estate, consultants, and any small business that wants to look professional and attract more customers online.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="ld-section ld-section-alt">
+      <div class="ld-container">
+        <div class="ld-final-cta ld-reveal">
+          <h2 class="ld-h2">Let's build something your customers will remember.</h2>
+          <p class="ld-lead">Whether you're starting from scratch or ready to level up, LaunchDok helps you build a digital presence that works as hard as you do.</p>
+          <div class="ld-hero-actions">
+            <a href="#contact" class="ld-btn ld-btn-primary">Book a Free Discussion</a>
+            <a href="https://wa.me/94711670179" target="_blank" rel="noopener" class="ld-btn ld-btn-whatsapp">Message on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="ld-section" id="contact">
+      <div class="ld-container" style="max-width:800px;">
+        <div class="ld-section-header center ld-reveal">
+          <span class="ld-label">Contact</span>
+          <h2 class="ld-h2">Ready to launch <em>properly?</em></h2>
+          <p class="ld-lead" style="margin-inline:auto;">Tell us what you're building. We'll help you figure out the smartest way to get online, look professional, and start attracting customers.</p>
+        </div>
+        <form class="ld-contact-form ld-reveal" action="email-templates/contact-form.php" method="post">
+          <div class="ld-field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="What's your name?" required>
+          </div>
+          <div class="ld-field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@business.com" required>
+          </div>
+          <div class="ld-field">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" placeholder="+94 ...">
+          </div>
+          <div class="ld-field">
+            <label for="package">Interested in</label>
+            <select id="package" name="subject">
+              <option value="">Select a package...</option>
+              <option>Essentials</option>
+              <option>Growth</option>
+              <option>Complete LaunchDok</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="ld-field full">
+            <label for="message">Tell us about your business</label>
+            <textarea id="message" name="comment" placeholder="What are you building? What does success look like?" required></textarea>
+          </div>
+          <div class="ld-field full" style="flex-direction:row;justify-content:flex-end;">
+            <input type="hidden" name="redirect" value="">
+            <button type="submit" class="ld-btn ld-btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="ld-footer">
+    <div class="ld-container">
+      <div class="ld-footer-grid">
+        <div>
+          <a href="#home" class="ld-logo">
+            <img src="image/navicon.png" alt="" width="34" height="34">
+            <span class="ld-logo-text">Launch<span>Dok</span></span>
+          </a>
+          <p class="ld-footer-tagline">LaunchDok — Prepare · Launch · Grow.<br>Digital systems for businesses ready to grow.</p>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <a href="#services">Services</a>
+          <a href="./Client.html">Work</a>
+          <a href="#process">Process</a>
+          <a href="#packages">Packages</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <a href="#services">Websites</a>
+          <a href="#services">Branding</a>
+          <a href="#services">AI Automation</a>
+          <a href="#services">Digital Marketing</a>
+          <a href="#capabilities">Everything We Handle</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="tel:+94711670179">071 167 0179</a>
+          <a href="mailto:hello@launchdok.com">hello@launchdok.com</a>
+          <a href="https://wa.me/94711670179" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="./Client.html">Client Portfolio</a>
+        </div>
+      </div>
+      <div class="ld-footer-bottom">&copy; 2026 LaunchDok. All rights reserved.</div>
     </div>
-    <!-- end sticky -->
-    <!-- start scroll progress -->
-    <div class="scroll-progress d-none d-xxl-block">
-        <a href="#" class="scroll-top" aria-label="scroll">
-            <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
-        </a>
-    </div>
-    <!-- end scroll progress -->
-    <!-- javascript libraries -->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/vendors.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+  </footer>
+
+  <script src="js/launchdok.js"></script>
 </body>
-
 </html>
