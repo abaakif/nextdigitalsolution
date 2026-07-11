@@ -19,6 +19,16 @@
 </head>
 <body>
 
+  <!-- Global live background -->
+  <div class="ld-ambient-bg" aria-hidden="true">
+    <div class="ld-ambient-orb ld-ambient-orb--1"></div>
+    <div class="ld-ambient-orb ld-ambient-orb--2"></div>
+    <div class="ld-ambient-orb ld-ambient-orb--3"></div>
+    <div class="ld-ambient-orb ld-ambient-orb--4"></div>
+    <div class="ld-ambient-orb ld-ambient-orb--5"></div>
+    <canvas class="ld-ambient-canvas" id="ld-ambient-canvas"></canvas>
+  </div>
+
   <!-- Navbar -->
   <header class="ld-nav" id="ld-nav">
     <div class="ld-nav-inner">
@@ -28,7 +38,7 @@
       </a>
       <nav class="ld-nav-links" aria-label="Main navigation">
         <a href="#home">Home</a>
-        <a href="#services">Services</a>
+        <a href="#services">What You Get</a>
         <a href="./Client.html">Work</a>
         <a href="#process">Process</a>
         <a href="#packages">Packages</a>
@@ -44,7 +54,7 @@
 
   <nav class="ld-mobile-menu" id="ld-mobile-menu" aria-label="Mobile navigation">
     <a href="#home">Home</a>
-    <a href="#services">Services</a>
+    <a href="#services">What You Get</a>
     <a href="./Client.html">Work</a>
     <a href="#process">Process</a>
     <a href="#packages">Packages</a>
@@ -63,173 +73,154 @@
           <div class="ld-horizon-glow"></div>
           <div class="ld-horizon-line"></div>
         </div>
+        <div class="ld-hero-aurora ld-hero-aurora--1"></div>
+        <div class="ld-hero-aurora ld-hero-aurora--2"></div>
+        <div class="ld-hero-beam"></div>
         <div class="ld-particles" id="ld-particles"></div>
         <div class="ld-cta-glow"></div>
         <div class="ld-hero-vignette"></div>
       </div>
       <div class="ld-hero-content ld-reveal visible">
-        <div class="ld-badge"><span class="ld-badge-dot"></span> Digital launch systems for growing businesses</div>
+        <div class="ld-badge"><span class="ld-badge-dot"></span> Prepare · Launch · Grow</div>
         <h1>Your business deserves more than <em>just a website.</em></h1>
-        <p class="ld-hero-sub ld-hero-sub--full">LaunchDok builds premium websites, branding, AI automation, and digital systems that help businesses look trusted, work smarter, and win more customers.</p>
-        <p class="ld-hero-sub ld-hero-sub--short">Premium websites, branding &amp; AI automation — built so you look trusted and win more customers.</p>
+        <p class="ld-hero-sub">A premium online presence that makes customers trust you — and choose you.</p>
         <div class="ld-hero-actions">
           <a href="#contact" class="ld-btn ld-btn-primary ld-btn-hero">Launch My Business</a>
           <a href="./Client.html" class="ld-btn ld-btn-ghost">See Our Work</a>
         </div>
       </div>
-      <p class="ld-trust-line" aria-hidden="true"><span>Websites · Branding · AI Automation · Domains · Emails · Ongoing Care</span></p>
+      <p class="ld-trust-line" aria-hidden="true"><span>Websites · Branding · Automation · Launch Support</span></p>
     </section>
+
+    <!-- Scrolling marquee -->
+    <div class="ld-scroll-marquee" aria-hidden="true">
+      <div class="ld-scroll-marquee-track">
+        <span>Prepare · Launch · Grow</span>
+        <span>Premium Websites</span>
+        <span>Brand Identity</span>
+        <span>AI Automation</span>
+        <span>More Enquiries</span>
+        <span>One Team · Zero Chaos</span>
+        <span>Prepare · Launch · Grow</span>
+        <span>Premium Websites</span>
+        <span>Brand Identity</span>
+        <span>AI Automation</span>
+        <span>More Enquiries</span>
+        <span>One Team · Zero Chaos</span>
+      </div>
+    </div>
 
     <!-- Trust / Problem -->
     <section class="ld-section ld-section-alt" id="trust">
       <div class="ld-container">
         <div class="ld-section-header ld-reveal">
-          <span class="ld-label">The real problem</span>
-          <h2 class="ld-h2">Most businesses don't lose customers because their service is bad. They lose them because they don't look <em>trusted online.</em></h2>
-          <p class="ld-lead">Slow websites, messy branding, Gmail addresses, broken forms, outdated pages, and no clear customer journey quietly cost businesses opportunities every day. LaunchDok fixes the full digital foundation.</p>
+          <span class="ld-label">The problem</span>
+          <h2 class="ld-h2">Bad service isn't always the issue. Looking <em>untrusted online</em> is.</h2>
         </div>
         <div class="ld-pain-grid">
           <div class="ld-pain-card ld-reveal">
             <div class="icon">📉</div>
             <h3>You look outdated</h3>
-            <p>First impressions happen in seconds. An old website tells customers you're not ready for theirs.</p>
+            <p>Customers decide in seconds. An old site costs you before you get a chance.</p>
           </div>
           <div class="ld-pain-card ld-reveal">
             <div class="icon">🤔</div>
-            <h3>Customers don't trust you</h3>
-            <p>No professional branding, no business email, no polish — and trust disappears before you get a chance.</p>
+            <h3>Trust is missing</h3>
+            <p>No polish, no business email — and people move on.</p>
           </div>
           <div class="ld-pain-card ld-reveal">
             <div class="icon">💨</div>
-            <h3>Leads disappear</h3>
-            <p>Broken forms, slow pages, and no WhatsApp or booking links mean interested people simply move on.</p>
-          </div>
-          <div class="ld-pain-card ld-reveal">
-            <div class="icon">😵‍💫</div>
-            <h3>Tech feels confusing</h3>
-            <p>Domains, hosting, emails, SEO — business owners shouldn't need five vendors to look professional.</p>
+            <h3>Leads slip away</h3>
+            <p>Slow pages and broken forms mean lost enquiries every day.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- What We Do -->
+    <!-- What You Get -->
     <section class="ld-section" id="services">
       <div class="ld-container">
         <div class="ld-section-header center ld-reveal">
-          <span class="ld-label">What we do</span>
-          <h2 class="ld-h2">Everything your business needs to launch <em>properly.</em></h2>
+          <span class="ld-label">What you get</span>
+          <h2 class="ld-h2">Go with LaunchDok — and your business <em>actually looks ready.</em></h2>
+          <p class="ld-lead" style="margin-inline:auto;">Not a list of tasks. Real outcomes you'll feel from day one.</p>
         </div>
         <div class="ld-grid-3">
-          <article class="ld-card ld-reveal">
-            <div class="ld-card-icon">◈</div>
-            <h3>Premium Websites</h3>
-            <p>Fast, mobile-friendly websites designed to turn visitors into customers.</p>
+          <article class="ld-card ld-outcome ld-reveal">
+            <div class="ld-card-icon">✦</div>
+            <h3>Customers trust you instantly</h3>
+            <p>A polished website and brand that makes you look as good as you really are.</p>
           </article>
-          <article class="ld-card ld-reveal">
-            <div class="ld-card-icon">◆</div>
-            <h3>Branding &amp; Identity</h3>
-            <p>Logos, colors, business cards, social media visuals, and a brand system people remember.</p>
-          </article>
-          <article class="ld-card ld-reveal">
-            <div class="ld-card-icon">⚡</div>
-            <h3>AI Automation</h3>
-            <p>Automate inquiries, follow-ups, FAQs, customer replies, and repetitive work.</p>
-          </article>
-          <article class="ld-card ld-reveal">
+          <article class="ld-card ld-outcome ld-reveal">
             <div class="ld-card-icon">↗</div>
-            <h3>Digital Marketing</h3>
-            <p>Content direction, campaigns, and growth plans built around real business goals.</p>
+            <h3>More enquiries, less chasing</h3>
+            <p>Clear CTAs, WhatsApp, forms, and booking — so interested people actually reach you.</p>
           </article>
-          <article class="ld-card ld-reveal">
-            <div class="ld-card-icon">⚙</div>
-            <h3>Business Setup</h3>
-            <p>Domains, hosting, business emails, forms, WhatsApp buttons, booking links, and Google setup.</p>
+          <article class="ld-card ld-outcome ld-reveal">
+            <div class="ld-card-icon">◎</div>
+            <h3>Professional from day one</h3>
+            <p>Business email, domain, hosting, and Google setup — no Gmail, no guesswork.</p>
           </article>
-          <article class="ld-card ld-reveal">
+          <article class="ld-card ld-outcome ld-reveal">
+            <div class="ld-card-icon">◈</div>
+            <h3>One team, zero chaos</h3>
+            <p>No juggling five freelancers. Website, brand, and tech — handled in one place.</p>
+          </article>
+          <article class="ld-card ld-outcome ld-reveal">
+            <div class="ld-card-icon">⚡</div>
+            <h3>Less manual work</h3>
+            <p>Smart automation for replies, follow-ups, and FAQs — so you're not stuck on repeat tasks.</p>
+          </article>
+          <article class="ld-card ld-outcome ld-reveal">
             <div class="ld-card-icon">♡</div>
-            <h3>Ongoing Care</h3>
-            <p>Updates, maintenance, small edits, security, backups, and monthly improvements.</p>
+            <h3>Support after launch</h3>
+            <p>Updates, fixes, and improvements — you're never left alone once you're live.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Everything We Handle -->
-    <section class="ld-section ld-section-alt" id="capabilities">
-      <div class="ld-container">
-        <div class="ld-section-header center ld-reveal">
-          <span class="ld-label">Everything we handle</span>
-          <h2 class="ld-h2">If it's digital, <em>we probably do it.</em></h2>
-          <p class="ld-lead" style="margin-inline:auto;">One team. One partner. No chasing five different people.</p>
-        </div>
-        <div class="ld-cap-grid ld-reveal">
-          <div class="ld-cap">Website Design</div>
-          <div class="ld-cap">Website Redesign</div>
-          <div class="ld-cap">Landing Pages</div>
-          <div class="ld-cap">Logo Design</div>
-          <div class="ld-cap">Brand Identity</div>
-          <div class="ld-cap">Business Cards</div>
-          <div class="ld-cap">Social Media Kits</div>
-          <div class="ld-cap">Domain Setup</div>
-          <div class="ld-cap">Hosting</div>
-          <div class="ld-cap">Business Emails</div>
-          <div class="ld-cap">Google Business Profile</div>
-          <div class="ld-cap">WhatsApp Integration</div>
-          <div class="ld-cap">Booking Systems</div>
-          <div class="ld-cap">Contact Forms</div>
-          <div class="ld-cap">SEO Foundations</div>
-          <div class="ld-cap">Analytics Setup</div>
-          <div class="ld-cap">AI Chatbots</div>
-          <div class="ld-cap">AI Workflow Automation</div>
-          <div class="ld-cap">Maintenance</div>
-          <div class="ld-cap">Security &amp; Backups</div>
-          <div class="ld-cap">Monthly Updates</div>
         </div>
       </div>
     </section>
 
     <!-- Process -->
-    <section class="ld-section" id="process">
+    <section class="ld-section ld-section-alt" id="process">
       <div class="ld-container">
         <div class="ld-section-header ld-reveal">
           <span class="ld-label">Process</span>
-          <h2 class="ld-h2">From idea to launch <em>without the confusion.</em></h2>
+          <h2 class="ld-h2">Idea to launch — <em>without the headache.</em></h2>
         </div>
         <div class="ld-process-list">
           <div class="ld-process-item ld-reveal">
             <div class="ld-process-num">01</div>
             <div>
               <h3>Discover</h3>
-              <p>We understand your business, goals, customers, and what needs to be fixed.</p>
+              <p>We learn your business, goals, and what needs fixing.</p>
             </div>
           </div>
           <div class="ld-process-item ld-reveal">
             <div class="ld-process-num">02</div>
             <div>
               <h3>Design</h3>
-              <p>We create the look, structure, content, and experience your customers will trust.</p>
+              <p>Look, layout, and messaging your customers will trust.</p>
             </div>
           </div>
           <div class="ld-process-item ld-reveal">
             <div class="ld-process-num">03</div>
             <div>
               <h3>Build</h3>
-              <p>We set up your website, brand assets, business email, forms, automation, and tech foundation.</p>
+              <p>Website, brand, email, forms, and tech — all connected.</p>
             </div>
           </div>
           <div class="ld-process-item ld-reveal">
             <div class="ld-process-num">04</div>
             <div>
               <h3>Launch</h3>
-              <p>We test, polish, connect everything, and help you go live professionally.</p>
+              <p>Tested, polished, and live — properly.</p>
             </div>
           </div>
           <div class="ld-process-item ld-reveal">
             <div class="ld-process-num">05</div>
             <div>
               <h3>Grow</h3>
-              <p>We support updates, improvements, marketing, and future digital expansion.</p>
+              <p>Ongoing updates and support as you scale.</p>
             </div>
           </div>
         </div>
@@ -237,7 +228,7 @@
     </section>
 
     <!-- Packages -->
-    <section class="ld-section ld-section-alt" id="packages">
+    <section class="ld-section" id="packages">
       <div class="ld-container">
         <div class="ld-section-header center ld-reveal">
           <span class="ld-label">Packages</span>
@@ -293,14 +284,13 @@
     </section>
 
     <!-- Work / Portfolio -->
-    <section class="ld-section" id="work">
+    <section class="ld-section ld-section-alt" id="work">
       <div class="ld-container">
         <div class="ld-section-header center ld-reveal">
           <span class="ld-label">Work</span>
-          <h2 class="ld-h2">Imagine your business <em>looking like this.</em></h2>
-          <p class="ld-lead" style="margin-inline:auto;">Concept builds and client projects across industries — designed to make your business look serious from day one.</p>
+          <h2 class="ld-h2">This is what <em>ready</em> looks like.</h2>
         </div>
-        <div class="ld-portfolio-grid">
+        <div class="ld-portfolio-grid ld-portfolio-grid--featured">
           <a href="./Client/SmileDental-Web.html" class="ld-portfolio-card ld-reveal">
             <div class="ld-portfolio-thumb">
               <img src="image/SD1.png" alt="Dental clinic website concept">
@@ -309,7 +299,7 @@
             <div class="ld-portfolio-body">
               <div class="type">Dental Clinic</div>
               <h3>Smile Dental Hospitals</h3>
-              <p>Premium clinic site with services, doctor profiles, and appointment flow — built to earn patient trust instantly.</p>
+              <p>Trust-first clinic site with booking flow.</p>
             </div>
           </a>
           <a href="./Client/Pioneers-Web.html" class="ld-portfolio-card ld-reveal">
@@ -320,42 +310,9 @@
             <div class="ld-portfolio-body">
               <div class="type">Cleaning Company</div>
               <h3>Pioneers Cleaning</h3>
-              <p>Service-focused website with clear CTAs, trust signals, and mobile-first design for local lead generation.</p>
+              <p>Mobile-first site built for local leads.</p>
             </div>
           </a>
-          <article class="ld-portfolio-card ld-reveal">
-            <div class="ld-portfolio-thumb" style="background:linear-gradient(135deg,#1a0a00,#0d0d0d);display:flex;align-items:center;justify-content:center;font-size:48px;">
-              ✂️
-              <span class="ld-portfolio-badge">Concept Build</span>
-            </div>
-            <div class="ld-portfolio-body">
-              <div class="type">Salon &amp; Beauty</div>
-              <h3>Glow Studio</h3>
-              <p>Booking integration, service menu, Instagram-ready visuals — designed so clients book before they even call.</p>
-            </div>
-          </article>
-          <article class="ld-portfolio-card ld-reveal">
-            <div class="ld-portfolio-thumb" style="background:linear-gradient(135deg,#001a0d,#0d0d0d);display:flex;align-items:center;justify-content:center;font-size:48px;">
-              🍽️
-              <span class="ld-portfolio-badge">Concept Build</span>
-            </div>
-            <div class="ld-portfolio-body">
-              <div class="type">Restaurant</div>
-              <h3>Urban Bite</h3>
-              <p>Menu showcase, reservation links, location maps, and social proof — turning hungry browsers into seated customers.</p>
-            </div>
-          </article>
-          <article class="ld-portfolio-card ld-reveal">
-            <div class="ld-portfolio-thumb" style="background:linear-gradient(135deg,#001020,#0d0d0d);display:flex;align-items:center;justify-content:center;font-size:48px;">
-              🏠
-              <span class="ld-portfolio-badge">Concept Build</span>
-            </div>
-            <div class="ld-portfolio-body">
-              <div class="type">Real Estate</div>
-              <h3>Prime Properties</h3>
-              <p>Property listings, agent profiles, inquiry forms — a digital presence that matches the value of what you sell.</p>
-            </div>
-          </article>
           <a href="./Client/Myhomes-Digital.html" class="ld-portfolio-card ld-reveal">
             <div class="ld-portfolio-thumb">
               <img src="image/C1.png" alt="Retail digital marketing">
@@ -364,7 +321,7 @@
             <div class="ld-portfolio-body">
               <div class="type">Retail Store</div>
               <h3>My Homes</h3>
-              <p>Digital marketing and brand presence for retail — driving foot traffic and online engagement together.</p>
+              <p>Digital brand presence for retail growth.</p>
             </div>
           </a>
         </div>
@@ -375,76 +332,62 @@
     </section>
 
     <!-- Why LaunchDok -->
-    <section class="ld-section ld-section-alt" id="why">
+    <section class="ld-section" id="why">
       <div class="ld-container">
         <div class="ld-why-grid">
           <div class="ld-reveal">
             <span class="ld-label">Why LaunchDok</span>
-            <h2 class="ld-h2">Built for business owners who don't want to chase <em>five different people.</em></h2>
-            <p class="ld-lead">We sell peace of mind — not just services. Your website, branding, emails, hosting, automation, and updates handled by one team that actually understands small business.</p>
+            <h2 class="ld-h2">One partner. <em>Zero chasing.</em></h2>
+            <p class="ld-lead">We handle the digital side so you can focus on running your business.</p>
           </div>
-          <ul class="ld-check-list ld-reveal">
-            <li>One team for website, branding, tech, and growth</li>
-            <li>Premium design without agency confusion</li>
-            <li>Business-focused copy and structure</li>
-            <li>AI and automation where it actually helps</li>
-            <li>Ongoing support after launch</li>
-            <li>Built to make your business look serious</li>
+          <ul class="ld-check-list">
+            <li>One team for website, brand, and tech</li>
+            <li>Premium design without agency chaos</li>
+            <li>Built to win trust and enquiries</li>
+            <li>Support that continues after launch</li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="ld-section" id="faq">
+    <section class="ld-section ld-section-alt" id="faq">
       <div class="ld-container" style="max-width:760px;">
-        <div class="ld-section-header center ld-reveal">
+        <div class="ld-section-header center">
           <span class="ld-label">FAQ</span>
-          <h2 class="ld-h2">Questions business owners <em>always ask.</em></h2>
+          <h2 class="ld-h2">Quick answers.</h2>
         </div>
-        <div class="ld-reveal">
+        <div class="ld-faq-list">
           <div class="ld-faq-item open">
             <button class="ld-faq-q" type="button">How long does a website take?<span class="icon">+</span></button>
-            <div class="ld-faq-a"><p>Most websites take 2–4 weeks. Branding adds 1–2 weeks. Complete LaunchDok setups with automation and email typically take 4–6 weeks. We give you a clear timeline before starting.</p></div>
+            <div class="ld-faq-a"><p>Most sites take 2–4 weeks. Full setups with branding and email take 4–6 weeks.</p></div>
           </div>
           <div class="ld-faq-item">
             <button class="ld-faq-q" type="button">Do I own my website?<span class="icon">+</span></button>
-            <div class="ld-faq-a"><p>Yes — 100%. Your website, brand assets, and content belong to you. No lock-in, no hidden clauses.</p></div>
-          </div>
-          <div class="ld-faq-item">
-            <button class="ld-faq-q" type="button">Can you redesign my existing website?<span class="icon">+</span></button>
-            <div class="ld-faq-a"><p>Absolutely. We audit what you have, keep what works, and rebuild what doesn't — without losing your content or SEO where possible.</p></div>
+            <div class="ld-faq-a"><p>Yes — 100%. Your site, brand, and content are yours. No lock-in.</p></div>
           </div>
           <div class="ld-faq-item">
             <button class="ld-faq-q" type="button">Can you set up domain and business email?<span class="icon">+</span></button>
-            <div class="ld-faq-a"><p>Yes. Domain registration, hosting, and professional business emails (you@yourbusiness.com) are part of our Business Setup and Complete packages.</p></div>
-          </div>
-          <div class="ld-faq-item">
-            <button class="ld-faq-q" type="button">Can you add WhatsApp or booking?<span class="icon">+</span></button>
-            <div class="ld-faq-a"><p>Yes — WhatsApp buttons, contact forms, online booking links, and calendar integrations are standard in our builds.</p></div>
+            <div class="ld-faq-a"><p>Yes. Domain, hosting, and you@yourbusiness.com emails are included in our full packages.</p></div>
           </div>
           <div class="ld-faq-item">
             <button class="ld-faq-q" type="button">Do you offer monthly support?<span class="icon">+</span></button>
-            <div class="ld-faq-a"><p>Yes. Our Ongoing Care plans cover updates, security, backups, small edits, and monthly improvements so you're never left on your own.</p></div>
+            <div class="ld-faq-a"><p>Yes — updates, security, backups, and small edits so you're never stuck.</p></div>
           </div>
           <div class="ld-faq-item">
             <button class="ld-faq-q" type="button">Can I pay in parts?<span class="icon">+</span></button>
-            <div class="ld-faq-a"><p>Yes. We offer milestone-based payment plans — typically split across project phases so you're never paying for work that hasn't started.</p></div>
-          </div>
-          <div class="ld-faq-item">
-            <button class="ld-faq-q" type="button">What type of businesses do you work with?<span class="icon">+</span></button>
-            <div class="ld-faq-a"><p>Salons, clinics, restaurants, cleaning companies, retail stores, real estate, consultants, and any small business that wants to look professional and attract more customers online.</p></div>
+            <div class="ld-faq-a"><p>Yes. Milestone-based payments split across project phases.</p></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Final CTA -->
-    <section class="ld-section ld-section-alt">
+    <section class="ld-section">
       <div class="ld-container">
         <div class="ld-final-cta ld-reveal">
-          <h2 class="ld-h2">Let's build something your customers will remember.</h2>
-          <p class="ld-lead">Whether you're starting from scratch or ready to level up, LaunchDok helps you build a digital presence that works as hard as you do.</p>
+          <h2 class="ld-h2">Ready to look as good as you really are?</h2>
+          <p class="ld-lead">Book a free discussion — we'll map the smartest way to get you online.</p>
           <div class="ld-hero-actions">
             <a href="#contact" class="ld-btn ld-btn-primary">Book a Free Discussion</a>
             <a href="https://wa.me/94711670179" target="_blank" rel="noopener" class="ld-btn ld-btn-whatsapp">Message on WhatsApp</a>
@@ -454,14 +397,14 @@
     </section>
 
     <!-- Contact -->
-    <section class="ld-section" id="contact">
+    <section class="ld-section ld-section-alt" id="contact">
       <div class="ld-container" style="max-width:800px;">
         <div class="ld-section-header center ld-reveal">
           <span class="ld-label">Contact</span>
-          <h2 class="ld-h2">Ready to launch <em>properly?</em></h2>
-          <p class="ld-lead" style="margin-inline:auto;">Tell us what you're building. We'll help you figure out the smartest way to get online, look professional, and start attracting customers.</p>
+          <h2 class="ld-h2">Let's talk.</h2>
+          <p class="ld-lead" style="margin-inline:auto;">Tell us what you're building. We'll take it from there.</p>
         </div>
-        <form class="ld-contact-form ld-reveal" action="email-templates/contact-form.php" method="post">
+        <form class="ld-contact-form" action="email-templates/contact-form.php" method="post">
           <div class="ld-field">
             <label for="name">Your name</label>
             <input type="text" id="name" name="name" placeholder="What's your name?" required>
@@ -511,19 +454,18 @@
         </div>
         <div>
           <h4>Navigate</h4>
-          <a href="#services">Services</a>
+          <a href="#services">What You Get</a>
           <a href="./Client.html">Work</a>
           <a href="#process">Process</a>
           <a href="#packages">Packages</a>
           <a href="#faq">FAQ</a>
         </div>
         <div>
-          <h4>Services</h4>
-          <a href="#services">Websites</a>
-          <a href="#services">Branding</a>
-          <a href="#services">AI Automation</a>
-          <a href="#services">Digital Marketing</a>
-          <a href="#capabilities">Everything We Handle</a>
+          <h4>Outcomes</h4>
+          <a href="#services">Trust &amp; credibility</a>
+          <a href="#services">More enquiries</a>
+          <a href="#services">One-team setup</a>
+          <a href="#services">Ongoing support</a>
         </div>
         <div>
           <h4>Contact</h4>
