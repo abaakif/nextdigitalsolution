@@ -560,6 +560,17 @@ ul { list-style: none; }
 .scroll-hint .bar { width:1px; height:34px; background:linear-gradient(var(--ld-orange),transparent); animation:pulse 1.8s ease-in-out infinite; }
 @keyframes pulse { 0%,100%{opacity:.3;} 50%{opacity:1;} }
 
+/* ---- Ticker strip ---- */
+.ticker-strip { position:relative; z-index:10; width:100%; overflow:hidden;
+  background:rgba(255,106,26,0.06); border-top:1px solid rgba(255,106,26,0.18); border-bottom:1px solid rgba(255,106,26,0.18);
+  padding:13px 0; }
+.ticker-track { display:flex; gap:32px; width:max-content;
+  animation:ticker 28s linear infinite; white-space:nowrap; }
+.ticker-track span { font-family:ui-monospace,"SF Mono",Consolas,monospace; font-size:11px; letter-spacing:.2em; color:var(--amber); text-transform:uppercase; }
+.ticker-track .dot { color:rgba(255,179,71,0.4); font-size:13px; }
+@keyframes ticker { from{transform:translateX(0);} to{transform:translateX(-50%);} }
+@media(prefers-reduced-motion:reduce){ .ticker-track{ animation:none; } }
+
 /* ---- Horizontal sliding deck ---- */
 .deck-section { position:relative; height:480vh; }
 .deck-section .stage { position:sticky; top:0; height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; overflow:hidden; gap:20px; padding-top:var(--ld-nav-h,72px); }
