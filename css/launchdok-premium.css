@@ -545,6 +545,17 @@ ul { list-style: none; }
 #emberCanvas { position:absolute; inset:0; z-index:1; }
 .planet { position:absolute; left:50%; width:200vw; aspect-ratio:1/1; border-radius:50%; transform:translate(-50%,0);
   background:
+    /* crater highlights — soft light circles scattered on surface */
+    radial-gradient(circle 3.2% at 38% 12%, rgba(255,240,200,.13) 0%, transparent 100%),
+    radial-gradient(circle 2.1% at 55% 8%,  rgba(255,235,190,.10) 0%, transparent 100%),
+    radial-gradient(circle 4.5% at 28% 18%, rgba(255,230,180,.08) 0%, transparent 100%),
+    radial-gradient(circle 1.8% at 63% 14%, rgba(255,245,210,.11) 0%, transparent 100%),
+    radial-gradient(circle 3.0% at 44% 22%, rgba(255,235,195,.07) 0%, transparent 100%),
+    radial-gradient(circle 2.4% at 70% 20%, rgba(255,230,185,.09) 0%, transparent 100%),
+    radial-gradient(circle 1.6% at 33% 6%,  rgba(255,240,205,.10) 0%, transparent 100%),
+    radial-gradient(circle 5.0% at 20% 10%, rgba(255,225,175,.06) 0%, transparent 100%),
+    /* lit upper hemisphere — sunlight from above */
+    radial-gradient(ellipse 55% 22% at 50% 2%, rgba(255,200,140,.14) 0%, transparent 80%),
     /* subtle surface continent-like shading */
     radial-gradient(ellipse 60% 30% at 40% 35%, rgba(255,130,40,.06) 0%, transparent 70%),
     /* dark atmosphere glow at the very top edge */
@@ -552,18 +563,13 @@ ul { list-style: none; }
     /* subtle latitude bands */
     repeating-linear-gradient(0deg, transparent 0px, transparent 60px, rgba(255,255,255,.012) 60px, rgba(255,255,255,.012) 62px),
     /* deep space dark */
-    #04030200;
+    #060404;
   border:1px solid rgba(255,106,26,0.55);
   box-shadow:
-    /* tight orange rim */
     0 0 0 2px rgba(255,130,40,0.25),
-    /* inner atmosphere glow */
     inset 0 0 80px rgba(255,106,26,0.07),
-    /* outer atmospheric halo — tight */
     0 0 30px 6px rgba(255,106,26,0.45),
-    /* mid atmosphere spread */
     0 0 80px 20px rgba(255,80,0,0.25),
-    /* outer space glow */
     0 0 180px 60px rgba(255,60,0,0.12);
   will-change:transform,top; }
 .hero-copy { position:relative; z-index:3; text-align:center; max-width:820px; padding:0 24px; display:flex; flex-direction:column; align-items:center; gap:18px; }
