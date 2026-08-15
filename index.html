@@ -62,7 +62,7 @@
     <canvas id="emberCanvas"></canvas>
     <div class="planet" id="planet"></div>
     <div class="hero-copy">
-      <div class="eyebrow">SRI LANKA · WEBSITES · BRANDING · AUTOMATION</div>
+      <div class="eyebrow">WEBSITES · BRANDING · AUTOMATION</div>
       <h1 id="heroHeadline"></h1>
       <p class="hero-sub" id="heroSub">A site that gets you found, trusted, and booked. Built for how Sri Lankan customers actually shop.</p>
       <div class="hero-ctas" id="heroCtas">
@@ -86,9 +86,8 @@
         <div class="deck-card">
           <div class="mock-chrome"><span></span><span></span><span></span></div>
           <div class="mock-photo photo-dental">
-            <img src="image/SD1.png" alt="Smile Dental Hospitals website">
+            <img src="image/SD1.png" alt="Smile Dental Hospitals website" draggable="false">
           </div>
-          <div class="mock-body"><div class="mock-line w70"></div><div class="mock-line w45"></div><div class="mock-btn"></div></div>
           <div class="deck-caption">
             <div class="k">CLINIC · COLOMBO</div>
             <h3>Smile Dental Hospitals</h3>
@@ -99,9 +98,8 @@
         <div class="deck-card">
           <div class="mock-chrome"><span></span><span></span><span></span></div>
           <div class="mock-photo photo-cleaning">
-            <img src="image/PC1.png" alt="Pioneers Cleaning website">
+            <img src="image/PC1.png" alt="Pioneers Cleaning website" draggable="false">
           </div>
-          <div class="mock-body"><div class="mock-line w70"></div><div class="mock-line w45"></div><div class="mock-btn"></div></div>
           <div class="deck-caption">
             <div class="k">SERVICE · NEGOMBO</div>
             <h3>Pioneers Cleaning</h3>
@@ -112,9 +110,8 @@
         <div class="deck-card">
           <div class="mock-chrome"><span></span><span></span><span></span></div>
           <div class="mock-photo photo-retail">
-            <img src="image/C1.png" alt="My Homes website">
+            <img src="image/C1.png" alt="My Homes website" draggable="false">
           </div>
-          <div class="mock-body"><div class="mock-line w70"></div><div class="mock-line w45"></div><div class="mock-btn"></div></div>
           <div class="deck-caption">
             <div class="k">RETAIL · KANDY</div>
             <h3>My Homes</h3>
@@ -129,7 +126,6 @@
               <path d="M12 2 15 9 22 10 17 15 18.5 22 12 18.5 5.5 22 7 15 2 10 9 9 12 2Z"/>
             </svg>
           </div>
-          <div class="mock-body"><div class="mock-line w70"></div><div class="mock-line w45"></div><div class="mock-btn"></div></div>
           <div class="deck-caption">
             <div class="k">SALON · COLOMBO 07</div>
             <h3>Bordeaux Studio</h3>
@@ -156,8 +152,8 @@
       <h2 class="ld-h2">See the difference for yourself.</h2>
     </div>
     <div class="compare ld-reveal" id="compare">
-      <img class="cmp-before" src="image/PC1.png" alt="Before">
-      <img class="cmp-after"  src="image/PC2.png" alt="After" id="cmpAfter">
+      <img class="cmp-before" src="image/PC1.png" alt="Before" draggable="false">
+      <img class="cmp-after"  src="image/PC2.png" alt="After" id="cmpAfter" draggable="false">
       <div class="cmp-label cmp-label-before">BEFORE</div>
       <div class="cmp-label cmp-label-after">AFTER</div>
       <div class="cmp-handle" id="compareHandle"></div>
@@ -270,7 +266,7 @@
           <li><svg viewBox="0 0 16 16" fill="none"><polyline points="3,8 6,11 13,4" stroke="#FF6A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Basic SEO</li>
           <li><svg viewBox="0 0 16 16" fill="none"><polyline points="3,8 6,11 13,4" stroke="#FF6A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Domain guidance</li>
         </ul>
-        <a class="plan-btn plan-btn-ghost" href="#contact">Get Started</a>
+        <a class="ld-btn ld-btn-ghost plan-btn" href="#contact">Get Started</a>
       </div>
       <div class="plan popular ld-reveal" style="--reveal-delay:.1s">
         <div class="tier">Growth</div>
@@ -283,7 +279,7 @@
           <li><svg viewBox="0 0 16 16" fill="none"><polyline points="3,8 6,11 13,4" stroke="#FF6A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Google Business setup</li>
           <li><svg viewBox="0 0 16 16" fill="none"><polyline points="3,8 6,11 13,4" stroke="#FF6A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Booking link integration</li>
         </ul>
-        <a class="plan-btn plan-btn-primary" href="#contact">Get Started</a>
+        <a class="ld-btn ld-btn-primary plan-btn" href="#contact">Get Started</a>
       </div>
       <div class="plan ld-reveal" style="--reveal-delay:.2s">
         <div class="tier">Full Service</div>
@@ -296,7 +292,7 @@
           <li><svg viewBox="0 0 16 16" fill="none"><polyline points="3,8 6,11 13,4" stroke="#FF6A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Monthly maintenance</li>
           <li><svg viewBox="0 0 16 16" fill="none"><polyline points="3,8 6,11 13,4" stroke="#FF6A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority support</li>
         </ul>
-        <a class="plan-btn plan-btn-ghost" href="#contact">Get Started</a>
+        <a class="ld-btn ld-btn-ghost plan-btn" href="#contact">Get Started</a>
       </div>
     </div>
   </div>
@@ -539,36 +535,97 @@ const dcards=deckTrack.querySelectorAll('.deck-card');
 const deckDotsWrap=document.getElementById('deckDots');
 const deckFill=document.getElementById('deckFill');
 const deckCounter=document.getElementById('deckCounter');
-dcards.forEach((_,i)=>{ const d=document.createElement('span'); if(!i)d.classList.add('active'); deckDotsWrap.appendChild(d); });
+dcards.forEach((_,i)=>{ const d=document.createElement('span'); deckDotsWrap.appendChild(d); });
 const deckDots=deckDotsWrap.querySelectorAll('span');
-let deckActive=-1, heroWordsRevealed=0;
-let hPT=0,hPS=0,dPT=0,dPS=0;
+const N=dcards.length;
+let deckActive=0, heroWordsRevealed=0;
+let hPT=0,hPS=0,dPT=0;
+let rafId=null, scrollIdleTimer=null;
+let swipeScrolling=false, swipeScrollTimer=null;
 function clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
-function readT(){
-  const vh=innerHeight;
-  const hR=pinHero.getBoundingClientRect(); hPT=clamp(-hR.top/(pinHero.offsetHeight-vh),0,1);
-  const dR=deckSection.getBoundingClientRect(); dPT=clamp(-dR.top/(deckSection.offsetHeight-vh),0,1);
+
+/* ---- deck zone controller ---- */
+function setDeckZone(idx){
+  deckActive=idx;
+  const prev=(idx-1+N)%N, next=(idx+1)%N;
+  dcards.forEach((c,i)=>{
+    c.classList.remove('is-active','is-prev','is-next');
+    if(i===idx) c.classList.add('is-active');
+    else if(i===prev) c.classList.add('is-prev');
+    else if(i===next) c.classList.add('is-next');
+  });
+  deckDots.forEach((d,i)=>d.classList.toggle('active',i===idx));
+  deckCounter.textContent=String(idx+1).padStart(2,'0')+' / '+String(N).padStart(2,'0');
+  deckFill.style.width=((idx+1)/N*100)+'%';
 }
-function renderLoop(){
-  hPS+=(hPT-hPS)*.12; if(Math.abs(hPT-hPS)<.0005)hPS=hPT;
-  dPS+=(dPT-dPS)*.12; if(Math.abs(dPT-dPS)<.0005)dPS=dPT;
+setDeckZone(0);
+
+/* ---- drag / swipe on deck (mouse + touch) ---- */
+const deckVP=deckSection.querySelector('.deck-viewport');
+let swX=0, swY=0, swActive=false;
+deckVP.addEventListener('pointerdown',e=>{
+  swX=e.clientX; swY=e.clientY; swActive=true;
+  deckVP.setPointerCapture(e.pointerId); /* keeps events even when cursor leaves element */
+});
+deckVP.addEventListener('pointermove',e=>{
+  if(!swActive) return;
+  /* once clearly horizontal drag, block browser text-select / scroll-snap interference */
+  if(Math.abs(e.clientX-swX)>Math.abs(e.clientY-swY)&&Math.abs(e.clientX-swX)>8){
+    e.preventDefault();
+  }
+},{passive:false});
+deckVP.addEventListener('pointerup',e=>{
+  if(!swActive) return;
+  swActive=false;
+  deckVP.releasePointerCapture(e.pointerId);
+  const dx=e.clientX-swX, dy=e.clientY-swY;
+  if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>30){
+    const newIdx=clamp(deckActive+(dx<0?1:-1),0,N-1);
+    if(newIdx!==deckActive){
+      setDeckZone(newIdx);
+      swipeScrolling=true;
+      clearTimeout(swipeScrollTimer);
+      swipeScrollTimer=setTimeout(()=>{swipeScrolling=false;},700);
+      const frac=(newIdx+0.5)/N;
+      window.scrollTo({top:deckSection.offsetTop+frac*(deckSection.offsetHeight-innerHeight),behavior:'smooth'});
+    }
+  }
+});
+deckVP.addEventListener('pointercancel',e=>{ swActive=false; });
+function frame(){
+  rafId=null;
+  /* read fresh scroll positions inside the RAF so values are current */
+  const vh=innerHeight;
+  const hR=pinHero.getBoundingClientRect();
+  hPT=clamp(-hR.top/(pinHero.offsetHeight-vh),0,1);
+  const dR=deckSection.getBoundingClientRect();
+  dPT=clamp(-dR.top/(deckSection.offsetHeight-vh),0,1);
+
+  /* hero: smooth lerp for planet + word reveals */
+  hPS+=(hPT-hPS)*.1; if(Math.abs(hPT-hPS)<.001)hPS=hPT;
   planet.style.top=(78-hPS*46)+'%';
   planet.style.transform=`translate(-50%,0) scale(${1+hPS*.15})`;
-  const wP=clamp(hPS/.5,0,1); const wT=Math.floor(wP*words.length);
+  const wP=clamp(hPS/.65,0,1); const wT=Math.floor(wP*words.length);
   if(wT!==heroWordsRevealed){ words.forEach((w,i)=>w.classList.toggle('in',i<wT)); heroWordsRevealed=wT; }
-  heroSub.classList.toggle('in',hPS>.58); heroCtas.classList.toggle('in',hPS>.66);
-  deckFill.style.width=(dPS*100)+'%';
-  const zone=clamp(Math.floor(dPT*dcards.length),0,dcards.length-1);
-  deckTrack.style.transform=`translateX(${-(zone*364)}px)`;
-  if(zone!==deckActive){
-    dcards.forEach((c,i)=>{ c.classList.remove('active','adjacent'); if(i===zone)c.classList.add('active'); else if(i===zone-1||i===zone+1)c.classList.add('adjacent'); });
-    deckDots.forEach((d,i)=>d.classList.toggle('active',i===zone));
-    deckCounter.textContent=String(zone+1).padStart(2,'0')+' / '+String(dcards.length).padStart(2,'0');
-    deckActive=zone;
-  }
-  requestAnimationFrame(()=>{ readT(); renderLoop(); });
+  heroSub.classList.toggle('in',hPS>.7); heroCtas.classList.toggle('in',hPS>.78);
+
+  /* deck zone from scroll — swipeScrolling flag prevents fighting a swipe scroll */
+  const rawZone=clamp(Math.floor(dPT*N),0,N-1);
+  if(!swipeScrolling&&rawZone!==deckActive) setDeckZone(rawZone);
+  /* hero lerp needs to keep running until settled — otherwise stop */
+  if(Math.abs(hPT-hPS)>.001) rafId=requestAnimationFrame(frame);
 }
-readT(); renderLoop();
+function tick(){
+  /* called on every scroll/resize event — restarts the RAF loop */
+  clearTimeout(scrollIdleTimer);
+  if(!rafId) rafId=requestAnimationFrame(frame);
+  /* keep looping for 400ms after last scroll (handles momentum scrolling) */
+  scrollIdleTimer=setTimeout(()=>{ if(!rafId) rafId=requestAnimationFrame(frame); },400);
+}
+window.addEventListener('scroll', tick, {passive:true});
+window.addEventListener('resize', tick, {passive:true});
+/* initial render */
+rafId=requestAnimationFrame(frame);
 
 /* ---- drag compare ---- */
 const cmp=document.getElementById('compare');
