@@ -576,7 +576,7 @@ ul { list-style: none; }
 .deck-section .stage { position:sticky; top:0; height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; overflow:hidden; gap:20px; padding-top:var(--ld-nav-h,72px); }
 .deck-head { text-align:center; z-index:5; margin-top:16px; }
 .deck-head h2 { font-size:clamp(26px,3.6vw,44px); margin-top:16px; font-weight:600; letter-spacing:-0.02em; color:var(--hi); }
-.deck-viewport { position:relative; width:100%; height:min(440px,calc(100vh - 260px)); overflow:visible; cursor:grab; user-select:none; -webkit-user-select:none; }
+.deck-viewport { position:relative; width:100%; height:min(440px,calc(100vh - 260px)); overflow:visible; cursor:grab; user-select:none; -webkit-user-select:none; touch-action:pan-y; }
 .deck-viewport:active { cursor:grabbing; }
 .deck-track { position:relative; width:100%; height:100%; }
 .deck-card { position:absolute; top:0; left:50%; width:min(420px,78vw); height:100%;
@@ -703,6 +703,9 @@ ul { list-style: none; }
 @media(max-width:640px){
   .pin-hero{ height:240vh; }
   .deck-section{ height:400vh; }
-  .deck-card.is-prev,.deck-card.is-next{ opacity:0; pointer-events:none; }
+  /* narrower active card so side cards peek on small screens */
+  .deck-card { width:70vw; }
+  .deck-card.is-prev { transform:translateX(calc(-50% - 155px)) scale(0.82); opacity:0.55; }
+  .deck-card.is-next { transform:translateX(calc(-50% + 155px)) scale(0.82); opacity:0.55; }
 }
 @media(prefers-reduced-motion:reduce){ *{animation:none!important;transition:none!important;} }
