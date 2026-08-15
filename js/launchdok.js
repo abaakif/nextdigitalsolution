@@ -1,6 +1,6 @@
 /**
  * LaunchDok Premium — interactions
- * Horizon parallax · particles · scroll reveal · navbar · FAQ · mobile menu
+ * Ambient canvas · scroll reveal · navbar · FAQ · mobile menu
  */
 (function () {
   'use strict';
@@ -32,34 +32,8 @@
     });
   }
 
-  /* ── Horizon mouse + scroll parallax ── */
-  const horizonWrap = document.getElementById('ld-horizon-wrap');
-  const hero = document.querySelector('.ld-hero');
-  const heroContent = hero ? hero.querySelector('.ld-hero-content') : null;
+  /* ── Scroll effects — progress · parallax ── */
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let targetX = 0, targetY = 0, currentX = 0, currentY = 0;
-  let scrollHeroY = 0, currentScrollHeroY = 0;
-
-  if (horizonWrap && hero && !reducedMotion) {
-    hero.addEventListener('mousemove', (e) => {
-      const rect = hero.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
-      targetX = x * 24;
-      targetY = y * 12;
-    });
-    hero.addEventListener('mouseleave', () => { targetX = 0; targetY = 0; });
-    function animateHorizon() {
-      currentX += (targetX - currentX) * 0.06;
-      currentY += (targetY - currentY) * 0.06;
-      currentScrollHeroY += (scrollHeroY - currentScrollHeroY) * 0.08;
-      horizonWrap.style.transform = `translate3d(${currentX}px, ${currentY + currentScrollHeroY}px, 0) scale(${1 + Math.min(0.06, currentScrollHeroY / 800)})`;
-      requestAnimationFrame(animateHorizon);
-    }
-    animateHorizon();
-  }
-
-  /* ── Scroll effects — progress · parallax · hero fade ── */
   if (!reducedMotion) {
     const progressBar = document.createElement('div');
     progressBar.className = 'ld-scroll-progress';
@@ -74,24 +48,6 @@
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const progress = docHeight > 0 ? Math.min(1, scrollY / docHeight) : 0;
       progressBar.style.transform = `scaleX(${progress})`;
-
-      if (hero) {
-        const heroRect = hero.getBoundingClientRect();
-        const heroH = hero.offsetHeight || 1;
-        const heroProgress = Math.min(1, Math.max(0, scrollY / heroH));
-        scrollHeroY = heroProgress * 90;
-
-        if (heroContent) {
-          const fade = 1 - Math.min(1, heroProgress * 1.2);
-          heroContent.style.opacity = String(fade);
-          heroContent.style.transform = `translateY(${heroProgress * 36}px)`;
-        }
-
-        const heroBg = hero.querySelector('.ld-hero-bg');
-        if (heroBg) {
-          heroBg.style.transform = `translateY(${heroProgress * 50}px)`;
-        }
-      }
 
       orbs.forEach((orb, i) => {
         const speed = 0.04 + i * 0.025;
@@ -109,29 +65,6 @@
       }
     }, { passive: true });
     updateScrollEffects();
-  }
-
-  /* ── Section live backgrounds — removed per-section layers for uniform page tone ── */
-
-  /* ── Particles ── */
-  const particleContainer = document.getElementById('ld-particles');
-  if (particleContainer) {
-    const count = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 56;
-    for (let i = 0; i < count; i++) {
-      const p = document.createElement('div');
-      p.className = 'ld-particle';
-      p.style.left = Math.random() * 100 + '%';
-      p.style.bottom = (15 + Math.random() * 50) + '%';
-      p.style.animationDuration = (10 + Math.random() * 16) + 's';
-      p.style.animationDelay = (Math.random() * 12) + 's';
-      const size = 2 + Math.random() * 2.5;
-      p.style.width = p.style.height = size + 'px';
-      if (Math.random() > 0.7) {
-        p.style.background = 'rgba(255,180,90,0.9)';
-        p.style.boxShadow = '0 0 10px rgba(255,180,90,0.8)';
-      }
-      particleContainer.appendChild(p);
-    }
   }
 
   /* ── Ambient canvas — floating network ── */
